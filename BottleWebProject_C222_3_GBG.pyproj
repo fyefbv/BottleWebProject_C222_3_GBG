@@ -81,6 +81,9 @@
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\input_data.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="data\logs.json">
       <SubType>Code</SubType>
     </Content>
