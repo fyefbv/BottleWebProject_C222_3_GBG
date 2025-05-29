@@ -72,6 +72,7 @@
     <Folder Include="handlers\" />
     <Folder Include="graph_operations\" />
     <Folder Include="data\" />
+    <Folder Include="static\content\pages\" />
     <Folder Include="static\images\" />
     <Folder Include="tests\" />
     <Folder Include="static\" />
@@ -90,6 +91,12 @@
     <Content Include="requirements.txt" />
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
+    <Content Include="static\content\pages\about.css" />
+    <Content Include="static\content\pages\cycle_detection.css" />
+    <Content Include="static\content\pages\equivalence.css" />
+    <Content Include="static\content\pages\index.css" />
+    <Content Include="static\content\pages\layout.css" />
+    <Content Include="static\content\pages\max_flow.css" />
     <Content Include="static\content\site.css" />
     <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />

@@ -1,6 +1,5 @@
-% rebase('layout.tpl', title='Home Page', year=year)
+% rebase('layout.tpl', title='Главная страница', year=year)
 
-<div class="jumbotron">
-    <h1>Команда 3</h1>
-    <p class="lead">Элементы теории графов. Ориентированные графы. Определение свойств заданного бинарного отношения. Поиск максимального потока.</p>
-</div>
+<head>
+    <link rel="stylesheet" href="/static/content/pages/index.css">
+</head>

@@ -1,4 +1,5 @@
-% rebase('layout.tpl', title=title, year=year)
+% rebase('layout.tpl', title='Об авторах', year=year)
 
-<h2>{{ title }}.</h2>
-<h3>{{ message }}</h3>
+<head>
+    <link rel="stylesheet" href="/static/content/pages/about.css">
+</head>

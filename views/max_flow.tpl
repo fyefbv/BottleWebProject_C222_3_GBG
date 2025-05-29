@@ -1,11 +1,5 @@
-<!DOCTYPE html>
+% rebase('layout.tpl', title='Нахождение максимального потока', year=year)
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <link rel="stylesheet" href="/static/content/pages/max_flow.css">
 </head>
-<body>
-
-</body>
-</html>
