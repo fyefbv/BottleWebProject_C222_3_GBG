@@ -1,6 +1,10 @@
 # Readme
 README.md
 
+# Visual Studio project files
+*.pyproj
+*.pyproj.user
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
