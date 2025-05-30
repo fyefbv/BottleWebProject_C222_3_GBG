@@ -1,1 +1,390 @@
+/* Основные стили */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4db6ac;
+}
+
+    header h1 {
+        color: #00695c;
+        margin-bottom: 10px;
+        font-size: 2.2rem;
+    }
+
+/* Карточки */
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+    .card h2 {
+        color: #00897b;
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e0f2f1;
+        font-size: 1.5rem;
+    }
+
+/* Кнопка теории */
+.theory-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #bbb;
+    padding: 0.6rem 1.2rem;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+    .theory-toggle:hover {
+        background-color: #e6e6e6;
+    }
+
+    .theory-toggle i {
+        margin-left: 10px;
+        transition: transform 0.3s;
+    }
+
+/* Теоретический блок */
+.theory-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.theory-left {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.matrix-container {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.matrix-label {
+    font-weight: bold;
+    color: #00695c;
+    margin-top: 0;
+    text-align: center;
+}
+
+.matrix-container pre {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.example-image {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.theory-right {
+    flex: 2;
+}
+
+/* Объяснение свойств */
+.property-explanation {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #4db6ac;
+}
+
+    .property-explanation h3 {
+        margin-top: 0;
+        color: #006064;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .property-explanation h3 i {
+            color: #00897b;
+        }
+
+    .property-explanation p {
+        margin: 10px 0 0;
+        color: #455a64;
+    }
+
+/* Анализ примера */
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.analysis-point {
+    background: #f9fbe7;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.valid-icon {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.invalid-icon {
+    color: #c62828;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.analysis-point span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.analysis-point p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #5d4037;
+}
+
+.conclusion {
+    background: #fff8e1;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 1px dashed #ffb300;
+}
+
+/* Анализ примера */
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.analysis-point {
+    background: #f9fbe7;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.valid-icon {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.invalid-icon {
+    color: #c62828;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.analysis-point span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.analysis-point p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.conclusion {
+    background: #fff8e1;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Горизонтальный контейнер для данных и графа */
+.data-graph-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+/* Входные данные */
+.input-data .info-block {
+    margin-bottom: 20px;
+}
+
+.input-data p {
+    margin: 5px 0;
+    color: #37474f;
+}
+
+.input-data strong {
+    color: #00695c;
+}
+
+.input-data pre {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    max-height: 200px;
+    overflow: auto;
+}
+
+/* Граф */
+.graph-area #graph-container {
+    min-height: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph-placeholder {
+    text-align: center;
+    color: #757575;
+}
+
+    .graph-placeholder i {
+        font-size: 3rem;
+        color: #b2dfdb;
+        margin-bottom: 15px;
+    }
+
+    .graph-placeholder p {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+/* Свойства отношения */
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.property-card {
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #4db6ac;
+}
+
+    .property-card h3 {
+        margin-top: 0;
+        color: #004d40;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+.property-result {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00695c;
+}
+
+.property-description {
+    color: #455a64;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Замыкания */
+.closures-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.closure-card {
+    background: #e1f5fe;
+    padding: 15px;
+    border-radius: 8px;
+    border-top: 3px solid #4db6ac;
+}
+
+    .closure-card h3 {
+        margin-top: 0;
+        color: #006064;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .closure-card pre {
+        background: #f5f5f5;
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        min-height: 80px;
+        margin: 10px 0;
+        overflow: auto;
+    }
+
+.closure-info {
+    color: #00838f;
+    font-size: 0.9rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .data-graph-container {
+        grid-template-columns: 1fr;
+    }
+
+    .theory-content {
+        flex-direction: column;
+    }
+
+    .analysis-grid,
+    .properties-grid,
+    .closures-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .analysis-grid,
+    .properties-grid,
+    .closures-grid {
+        grid-template-columns: 1fr;
+    }
+}
