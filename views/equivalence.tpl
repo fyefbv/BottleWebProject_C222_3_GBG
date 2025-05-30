@@ -37,6 +37,15 @@
     </button>
     <div id="theory-block" style="display: none; margin-top: 1.5rem;">
         <h2>Что такое эквивалентность?</h2>
+        <div class="theory-content">
+            <div class="theory-left">
+                <div class="matrix-container">
+                    <p class="matrix-label">Матрица смежности:</p>
+                    <pre>1 1 0
+1 1 1
+0 1 1</pre>
+                </div>
+                <img src="/static/images/equivalence-example.jpg" alt="Пример графа" class="example-image">
             </div>
             <div class="theory-right">
                 <p><strong>Эквивалентное отношение</strong> — это бинарное отношение, обладающее тремя свойствами:</p>
@@ -57,7 +66,6 @@
                 </div>
 
                 <h3>Анализ примера</h3>
-
                 <div class="analysis-grid">
                     <div class="analysis-point">
                         <i class="fas fa-check-circle valid-icon"></i>

@@ -219,6 +219,54 @@ header {
 .analysis-point p {
     margin: 0;
     font-size: 0.9rem;
+    color: #5d4037;
+}
+
+.conclusion {
+    background: #fff8e1;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 1px dashed #ffb300;
+}
+
+/* Анализ примера */
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.analysis-point {
+    background: #f9fbe7;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.valid-icon {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.invalid-icon {
+    color: #c62828;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.analysis-point span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.analysis-point p {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 .conclusion {
