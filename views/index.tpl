@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title='Главная страница', year=year)
+% rebase('layout.tpl', title=title, year=year)
 
 <head>
     <link rel="stylesheet" href="/static/content/pages/index.css">
@@ -41,8 +41,8 @@
                     <h2>Методы анализа</h2>
                     <div class="btn-group">
                         <a href="/equivalence" class="btn method-btn">Эквивалентность</a>
-                        <a href="/cycles" class="btn method-btn">Поиск циклов</a>
-                        <a href="/maxflow" class="btn method-btn">Максимальный поток</a>
+                        <a href="/cycle_detection" class="btn method-btn">Поиск циклов</a>
+                        <a href="/max_flow" class="btn method-btn">Максимальный поток</a>
                     </div>
                 </section>
             </main>

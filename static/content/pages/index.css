@@ -65,11 +65,11 @@
     transition: border-color 0.3s;
 }
 
-    .input-field:focus,
-    .textarea-field:focus {
-        border-color: #00897b;
-        outline: none;
-    }
+.input-field:focus,
+.textarea-field:focus {
+    border-color: #00897b;
+    outline: none;
+}
 
 /* ־בכאסעü דנאפא */
 .graph-area {

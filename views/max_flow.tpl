@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title='Нахождение максимального потока', year=year)
+% rebase('layout.tpl', title=title, year=year)
 
 <head>
     <link rel="stylesheet" href="/static/content/pages/max_flow.css">

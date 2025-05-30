@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title='Определение свойств графа', year=year)
+% rebase('layout.tpl', title=title, year=year)
 
 <head>
     <link rel="stylesheet" href="/static/content/pages/equivalence.css">
