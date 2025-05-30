@@ -1,45 +1,59 @@
+/* Шапка страницы */
+.page-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 /* Сайдбар шаблонов */
 .template-aside {
     width: 240px;
+    height: 50%;
     background: #ffffff;
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-    .template-aside h2 {
-        margin-top: 0;
-        color: #00796b;
-        text-align: center;
-    }
+.template-aside h2 {
+    margin-top: 0;
+    color: #00796b;
+    text-align: center;
+}
 
-    .template-aside ul {
-        list-style: none;
-        padding: 0;
-        max-height: 300px;
-        overflow-y: auto;
-        margin-bottom: 15px;
-    }
+.template-aside ul {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
 
-    .template-aside li {
-        padding: 8px;
-        border-bottom: 1px solid #b2dfdb;
-        cursor: pointer;
-        transition: background 0.2s;
-    }
+.template-aside li {
+    padding: 8px;
+    border-bottom: 1px solid #b2dfdb;
+    cursor: pointer;
+    transition: background 0.2s;
+}
 
-        .template-aside li:hover,
-        .template-aside li.selected {
-            background: #b2dfdb;
-        }
+.template-aside li:hover,
+.template-aside li.selected {
+    background: #b2dfdb;
+}
 
 .load-btn {
     width: 100%;
     margin-top: 5px;
 }
 
-/* Карточки */
+/* Общие карточки */
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #ffffff;
     padding: 20px;
     border-radius: 12px;
@@ -47,28 +61,15 @@
     margin-bottom: 20px;
 }
 
-.content {
-    flex: 1;
+.content-left {
     display: flex;
     flex-direction: column;
 }
 
-/* Поля ввода */
-.input-field,
-.textarea-field {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #b2dfdb;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.input-field:focus,
-.textarea-field:focus {
-    border-color: #00897b;
-    outline: none;
+.content-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Область графа */
@@ -77,10 +78,20 @@
     border: 2px dashed #4db6ac;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph-placeholder {
+    color: #00897b;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Кнопки */
 .btn {
+    width: 100%;
     display: inline-block;
     padding: 10px 20px;
     background: #00897b;
@@ -93,20 +104,183 @@
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-    .btn:hover {
-        transform: translateY(-2px) scale(1.03);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
+.btn:hover {
+    color: #ffeb3b;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
 .action-btn {
     margin-top: 15px;
 }
 
+/* Методы анализа */
+.method-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.method-list li {
+    margin-bottom: 12px;
+}
+
+.method-list li:last-child {
+    margin-bottom: 0;
+}
+
 .method-btn {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.method-icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.method-text {
     flex: 1;
 }
 
-.btn-group {
+/* Кнопка скролла */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: #00897b;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
     display: flex;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.scroll-btn:hover {
+    background: #00796b;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-btn i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.scroll-btn:hover i {
+    color: #ffeb3b;
+    transition: color 0.3s ease;
+}
+
+.scroll-btn .tooltip {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 15px);
+    transform: translateY(-50%);
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+.scroll-btn .tooltip-arrow {
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #2c3e50;
+}
+
+.scroll-btn:hover .tooltip {
+    opacity: 1;
+    transform: translateY(-50%) translateX(-5px);
+    animation: tooltip-pulse 1.5s infinite;
+}
+
+.matrix-container {
+    overflow-x: auto;
+    margin-top: 0.5rem;
+}
+
+.matrix-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.matrix-table th {
+    background: #f0fdfa;
+    color: #0f766e;
+    font-weight: 600;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.matrix-table td {
+    padding: 0;
+    border: 1px solid #e2e8f0;
+}
+
+.matrix-input {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+}
+
+.matrix-input:focus {
+    background: #f8fafc;
+}
+
+.matrix-input.invalid {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.matrix-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.matrix-btn {
+    flex: 1;
+    padding: 0.5rem;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.matrix-btn:hover {
+    background: #e2e8f0;
 }
