@@ -163,3 +163,139 @@ header h1 {
 .theory-right {
     flex: 2;
 }
+
+
+/* Добавьте эти стили в конец вашего site.css */
+
+/* Кастомная навигационная панель */
+.navbar-custom {
+    background-color: rgba(0, 137, 123, 0.92) !important; /* Бирюзовый с прозрачностью */
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px); /* Эффект размытия фона */
+    -webkit-backdrop-filter: blur(8px); /* Для Safari */
+    transition: background-color 0.3s ease;
+}
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav > li > a {
+        color: #ffffff !important;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-custom .navbar-brand {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+    }
+
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .navbar-nav > li > a:hover,
+        .navbar-custom .navbar-nav > li > a:focus {
+            color: #e0f7fa !important;
+            background-color: transparent !important;
+        }
+
+    .navbar-custom .navbar-toggle {
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+
+        .navbar-custom .navbar-toggle:hover,
+        .navbar-custom .navbar-toggle:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-custom .navbar-toggle .icon-bar {
+            background-color: #fff;
+            height: 2px;
+            width: 22px;
+        }
+
+    .navbar-custom .navbar-collapse,
+    .navbar-custom .navbar-form {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-custom .navbar-nav > .active > a,
+    .navbar-custom .navbar-nav > .active > a:hover,
+    .navbar-custom .navbar-nav > .active > a:focus {
+        background-color: rgba(0, 105, 92, 0.4) !important;
+        color: #ffffff !important;
+        border-radius: 4px;
+    }
+
+    /* Анимация для пунктов меню */
+    .navbar-custom .navbar-nav > li > a {
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+        .navbar-custom .navbar-nav > li > a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .navbar-custom .navbar-nav > li > a:hover:after,
+        .navbar-custom .navbar-nav > .active > a:after {
+            width: 100%;
+        }
+
+/* Футер */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    color: #00897b;
+    font-size: 0.95rem;
+}
+
+/* Основной контент */
+.body-content {
+    padding-top: 80px; /* Увеличим отступ для фиксированной навигации */
+    padding-bottom: 30px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .navbar-custom {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background-color: rgba(0, 137, 123, 0.98) !important;
+    }
+
+        .navbar-custom .navbar-nav > li > a {
+            padding: 10px 15px;
+        }
+
+    .body-content {
+        padding-top: 70px;
+    }
+}
+/* Увеличиваем шрифт в футере */
+footer p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #00695c;
+    margin: 0;
+    padding: 15px 0;
+}
+
+/* Дополнительные улучшения футера */
+footer {
+    background-color: rgba(0, 150, 136, 0.08);
+    border-radius: 8px;
+    margin-top: 30px;
+    padding: 10px 0;
+    border-top: 1px solid #e0f2f1;
+}
+
+    footer hr {
+        margin-bottom: 25px;
+        border-color: #b2dfdb;
+    }
