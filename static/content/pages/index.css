@@ -49,8 +49,7 @@
     margin-top: 5px;
 }
 
-/* Общие карточки */
-.card {
+.main-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +219,7 @@
     animation: tooltip-pulse 1.5s infinite;
 }
 
-.matrix-container {
+.main-matrix-container {
     overflow-x: auto;
     margin-top: 0.5rem;
 }

@@ -7,7 +7,7 @@
 
 <body>
     <div class="container">
-        <header class="page-header">
+        <div class="page-header">
             <h1>Анализ ориентированных графов</h1>
             <!-- Кнопка скролла -->
             <button class="scroll-btn" id="scrollToMethods" aria-label="Методы анализа графа">
@@ -17,7 +17,7 @@
                     Перейти к методам анализа графа
                 </span>
             </button>
-        </header>
+        </div>
 
         <div class="layout">
             <div class="content-left">
@@ -43,7 +43,7 @@
 
             <!-- Основной контент справа -->
             <main class="content-right">
-                <section class="card">
+                <section class="main-card">
                     <h2>Ввод данных графа</h2>
                     
                     <div class="form-group">
@@ -53,7 +53,7 @@
                     
                     <div class="form-group">
                         <label>Матрица смежности:</label>
-                        <div id="matrix-container" class="matrix-container">
+                        <div id="matrix-container" class="main-matrix-container">
                             <!-- Таблица будет сгенерирована скриптом -->
                         </div>
                     </div>
@@ -61,14 +61,14 @@
                     <button class="btn action-btn" id="build-graph">Построить граф</button>
                 </section>
 
-                <section class="card graph-area" id="graph-area">
+                <section class="main-card graph-area" id="graph-area">
                     <div class="graph-placeholder">
                         <i class="fas fa-diagram-project"></i>
                         <p>Граф будет отображён здесь после построения</p>
                     </div>
                 </section>
 
-                <section class="card" id="methods">
+                <section class="main-card" id="methods">
                     <h2>Методы анализа графа</h2>
                     <ul class="method-list">
                         <li>
