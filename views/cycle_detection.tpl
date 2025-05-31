@@ -12,7 +12,7 @@
         </header>
 
         <main class="content">
-            <!-- Теория -->
+            <!-- Блок теории -->
             <section class="card">
                 <button class="theory-toggle" onclick="toggleTheory()">
                     <span>Теоретический материал</span>
@@ -24,11 +24,9 @@
                         <div class="theory-left">
                             <div class="matrix-container">
                                 <p class="matrix-label">Матрица смежности:</p>
-                                <pre>
-                                0 1 0
-                                0 0 1
-                                1 0 0
-                                </pre>
+                                <pre>1 1 0
+1 1 1
+0 1 1</pre>
                             </div>
                             <img src="/static/images/cyclic_graph.png" alt="Пример графа с циклом" class="example-image">
                         </div>
@@ -78,7 +76,7 @@
             </div>
 
 
-            <!-- Результат поиска цикла -->
+            <!-- Результат поиска циклов -->
             <section class="card result-section">
                 <h2>Результат поиска</h2>
                 <div class="properties-grid">
@@ -105,6 +103,6 @@
             </section>
         </main>
     </div>
-</body>
 
-<script src="/static/scripts/collapse-block.js"></script>
+    <script src="/static/scripts/collapse-block.js"></script>
+</body>

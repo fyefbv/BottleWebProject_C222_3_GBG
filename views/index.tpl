@@ -20,8 +20,8 @@
         </div>
 
         <div class="layout">
+            <!-- Список шаблонов слева -->
             <div class="content-left">
-                <!-- Список шаблонов слева -->
                 <aside class="template-aside">
                     <h2>Готовые шаблоны</h2>
                     <ul id="template-list">
@@ -43,6 +43,7 @@
 
             <!-- Основной контент справа -->
             <main class="content-right">
+                <!-- Блок ввода данных графа -->
                 <section class="main-card">
                     <h2>Ввод данных графа</h2>
                     
@@ -54,13 +55,14 @@
                     <div class="form-group">
                         <label>Матрица смежности:</label>
                         <div id="matrix-container" class="main-matrix-container">
-                            <!-- Таблица будет сгенерирована скриптом -->
+
                         </div>
                     </div>
                     
                     <button class="btn action-btn" id="build-graph">Построить граф</button>
                 </section>
 
+                <!-- Блок для построения графа -->
                 <section class="main-card graph-area" id="graph-area">
                     <div class="graph-placeholder">
                         <i class="fas fa-diagram-project"></i>
@@ -68,25 +70,28 @@
                     </div>
                 </section>
 
+                <!-- Блок с кнопками перехода к методам -->
                 <section class="main-card" id="methods">
                     <h2>Методы анализа графа</h2>
                     <ul class="method-list">
-                        <li>
-                            <a href="/equivalence" class="btn method-btn">
-                                <span class="method-icon">✓</span>
-                                <span class="method-text">Анализ отношений эквивалентности</span>
-                            </a>
-                        </li>
                         <li>
                             <a href="/cycle_detection" class="btn method-btn">
                                 <span class="method-icon">↻</span>
                                 <span class="method-text">Поиск циклов в графе</span>
                             </a>
                         </li>
+                                              
                         <li>
                             <a href="/max_flow" class="btn method-btn">
                                 <span class="method-icon">⇄</span>
                                 <span class="method-text">Расчет максимального потока</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/equivalence" class="btn method-btn">
+                                <span class="method-icon">✓</span>
+                                <span class="method-text">Анализ отношений эквивалентности</span>
                             </a>
                         </li>
                     </ul>
