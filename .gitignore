@@ -1,6 +1,10 @@
 # Readme
 README.md
 
+# json
+*/input_data.json
+*/logs.json
+
 # Visual Studio project files
 *.pyproj
 *.pyproj.user
