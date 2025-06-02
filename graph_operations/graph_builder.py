@@ -22,15 +22,8 @@ class GraphBuilder:
             self.build_graph()
         return {node: list(self.G.successors(node)) for node in self.G.nodes()}
 
+    # Экспортирует граф в формат JSON, удобный для D3.js
     def to_d3_json(self):
-        """
-        Экспортирует граф в формат JSON, удобный для D3.js:
-        {
-          "nodes": [{"id": "0"}, {"id": "1"}, …],
-          "links": [{"source": "0", "target": "1"}, …]
-        }
-        (все id приведены к строке, чтобы D3.js спокойно воспринимал).
-        """
         if self.G.number_of_edges() == 0:
             self.build_graph()
 

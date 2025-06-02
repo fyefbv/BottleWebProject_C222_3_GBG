@@ -23,7 +23,7 @@
             <div class="content-left">
                 <aside class="template-aside">
                     <h2>Готовые шаблоны</h2>
-                    <ul id="template-list"></ul> <!-- Список будет заполнен через JS -->
+                    <ul id="template-list"></ul>
                 </aside>
 
                 <aside class="template-aside">
@@ -60,13 +60,20 @@
                 </section>
 
                 <!-- Блок с кнопками перехода к методам -->
-                <section class="main-card" id="methods">
+                <section id="methods" class="main-card">
                     <h2>Методы анализа графа</h2>
-                    <ul class="method-list">
-                        <li><a href="/cycle_detection" class="btn method-btn"><span class="method-icon">↻</span><span class="method-text">Поиск циклов в графе</span></a></li>
-                        <li><a href="/max_flow" class="btn method-btn"><span class="method-icon">⇄</span><span class="method-text">Расчет максимального потока</span></a></li>
-                        <li><a href="/equivalence" class="btn method-btn"><span class="method-icon">✓</span><span class="method-text">Анализ отношений эквивалентности</span></a></li>
-                    </ul>
+                        <ul class="method-list">
+                            <li>
+                                <form method="POST" action="/cycle_detection">
+                                    <button type="submit" class="btn method-btn">
+                                        <span class="method-icon">↻</span>
+                                        <span class="method-text">Поиск циклов в графе</span>
+                                    </button>
+                                </form>
+                            </li>
+                            <li><a href="/max_flow" class="btn method-btn"><span class="method-icon">⇄</span><span class="method-text">Расчет максимального потока</span></a></li>
+                            <li><a href="/equivalence" class="btn method-btn"><span class="method-icon">✓</span><span class="method-text">Анализ отношений эквивалентности</span></a></li>
+                        </ul>
                 </section>
             </main>
         </div>
@@ -74,13 +81,14 @@
 
     <script src="/static/scripts/matrix.js"></script>
     <script src="/static/scripts/scroll.js"></script>
+    <script src="/static/scripts/check_graph.js"></script>
+    <script src="/static/scripts/templates.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    {% if graph_json %}
-    <script>
-        var graphData = {{!graph_json}};
-    </script>
-    {% endif %}
-    <script src="/static/scripts/graph.js"></script>
-    <script src="/static/scripts/templates.js"></script>
+    % if graph_json:
+        <script>
+            var graphData = {{!graph_json}};
+        </script>
+        <script src="/static/scripts/graph.js"></script>
+    % end
 </body>

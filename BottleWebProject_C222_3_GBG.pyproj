@@ -42,6 +42,9 @@
     <Compile Include="graph_operations\graph_builder.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="graph_operations\graph_loader.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="handlers\handler_equivalence.py">
       <SubType>Code</SubType>
     </Compile>
@@ -109,6 +112,9 @@
     <Resource Include="static\images\cyclic_graph.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
+    <Content Include="static\scripts\check_graph.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\scripts\collapse-block.js" />
     <Content Include="static\scripts\graph.js">
       <SubType>Code</SubType>

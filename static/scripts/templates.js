@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Заголовок столбцов
         const headerRow = document.createElement('tr');
-        headerRow.appendChild(document.createElement('th')); // Пустой уголок
+        headerRow.appendChild(document.createElement('th'));
         for (let i = 1; i <= vertexCount; i++) {
             const th = document.createElement('th');
             th.textContent = i;
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 input.type = 'number';
                 input.min = '0';
                 input.max = '1';
-                input.value = matrix[i - 1][j - 1]; // Подставляем значения из шаблона
+                input.value = matrix[i - 1][j - 1];
                 input.className = 'matrix-input';
                 input.name = `cell-${i - 1}-${j - 1}`;
                 input.dataset.row = i - 1;

@@ -69,7 +69,7 @@ header h1 {
 }
 
 /* Граф */
-.graph-area #graph-container {
+#graph-area #graph-container {
     min-height: 300px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -177,75 +177,75 @@ header h1 {
     transition: background-color 0.3s ease;
 }
 
-    .navbar-custom .navbar-brand,
-    .navbar-custom .navbar-nav > li > a {
-        color: #ffffff !important;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-        font-weight: 500;
-        transition: color 0.3s ease;
-    }
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav > li > a {
+    color: #ffffff !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
 
-    .navbar-custom .navbar-brand {
-        font-size: 1.4rem;
-        letter-spacing: 0.5px;
-    }
+.navbar-custom .navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
 
-        .navbar-custom .navbar-brand:hover,
-        .navbar-custom .navbar-nav > li > a:hover,
-        .navbar-custom .navbar-nav > li > a:focus {
-            color: #e0f7fa !important;
-            background-color: transparent !important;
-        }
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #e0f7fa !important;
+    background-color: transparent !important;
+ }
 
-    .navbar-custom .navbar-toggle {
-        border-color: rgba(255, 255, 255, 0.4);
-    }
+.navbar-custom .navbar-toggle {
+    border-color: rgba(255, 255, 255, 0.4);
+}
 
-        .navbar-custom .navbar-toggle:hover,
-        .navbar-custom .navbar-toggle:focus {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
-        .navbar-custom .navbar-toggle .icon-bar {
-            background-color: #fff;
-            height: 2px;
-            width: 22px;
-        }
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #fff;
+    height: 2px;
+    width: 22px;
+}
 
-    .navbar-custom .navbar-collapse,
-    .navbar-custom .navbar-form {
-        border-color: rgba(255, 255, 255, 0.1);
-    }
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+    border-color: rgba(255, 255, 255, 0.1);
+}
 
-    .navbar-custom .navbar-nav > .active > a,
-    .navbar-custom .navbar-nav > .active > a:hover,
-    .navbar-custom .navbar-nav > .active > a:focus {
-        background-color: rgba(0, 105, 92, 0.4) !important;
-        color: #ffffff !important;
-        border-radius: 4px;
-    }
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    background-color: rgba(0, 105, 92, 0.4) !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+}
 
-    /* Анимация для пунктов меню */
-    .navbar-custom .navbar-nav > li > a {
-        position: relative;
-        padding-bottom: 5px;
-    }
+/* Анимация для пунктов меню */
+.navbar-custom .navbar-nav > li > a {
+    position: relative;
+    padding-bottom: 5px;
+}
 
-        .navbar-custom .navbar-nav > li > a:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #ffffff;
-            transition: width 0.3s ease;
-        }
+.navbar-custom .navbar-nav > li > a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+}
 
-        .navbar-custom .navbar-nav > li > a:hover:after,
-        .navbar-custom .navbar-nav > .active > a:after {
-            width: 100%;
-        }
+.navbar-custom .navbar-nav > li > a:hover:after,
+.navbar-custom .navbar-nav > .active > a:after {
+    width: 100%;
+}
 
 /* Футер */
 footer {
@@ -295,7 +295,33 @@ footer {
     border-top: 1px solid #e0f2f1;
 }
 
-    footer hr {
-        margin-bottom: 25px;
-        border-color: #b2dfdb;
-    }
+footer hr {
+    margin-bottom: 25px;
+    border-color: #b2dfdb;
+}
+
+/* Статичная таблица для матрицы смежности */
+.static-matrix {
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.static-matrix td {
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.static-matrix tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+
+.static-matrix tr:hover td {
+    background-color: #e8f4fa;
+}
