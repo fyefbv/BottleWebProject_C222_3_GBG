@@ -2,8 +2,8 @@
 README.md
 
 # json
-*/input_data.json
-*/logs.json
+/data/input_data.json
+/data/logs.json
 
 # Visual Studio project files
 *.pyproj
