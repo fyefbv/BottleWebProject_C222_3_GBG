@@ -4,6 +4,7 @@ Routes and views for the bottle application.
 
 from bottle import route, view
 from datetime import datetime
+from handlers.handler_index import build_graph_handler
 
 @route('/')
 @route('/home')
@@ -12,6 +13,7 @@ def home():
     """Отображает главную страницу"""
     return dict(
         title='Главная страница',
+        graph_json = '',
         year=datetime.now().year
     )
 

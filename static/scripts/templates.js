@@ -1,37 +1,39 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const vertexCountInput = document.getElementById('vertex-count');
-    const matrixContainer = document.getElementById('matrix-container');
-    const generateBtn = document.getElementById('generate-matrix');
+    // Загружаем шаблоны из JSON
+    fetch('/static/data/templates.json')
+        .then(response => response.json())
+        .then(templates => {
+            const templateList = document.getElementById('template-list');
 
-    // Сразу при загрузке строим матрицу размером по умолчанию
-    generateAdjacencyMatrix(parseInt(vertexCountInput.value));
-
-    // Если пользователь изменяет количество вершин, пересоздаём таблицу
-    vertexCountInput.addEventListener('input', function () {
-        const count = parseInt(this.value) || 0;
-        if (count > 0 && count <= 15) {
-            generateAdjacencyMatrix(count);
-        }
-    });
-
-    generateBtn.addEventListener('click', function (e) {
-        const inputs = matrixContainer.querySelectorAll('input.matrix-input');
-        inputs.forEach(input => {
-            // Генерируем 0 или 1 случайно
-            input.value = Math.random() < 0.5 ? '0' : '1';
-            // Убираем ошибочную подсветку
-            input.classList.remove('invalid');
+            templates.forEach(template => {
+                const li = document.createElement('li');
+                li.textContent = template.name;
+                li.addEventListener('click', () => {
+                    updateForm(
+                        template.adjacency_matrix.length,
+                        template.adjacency_matrix
+                    );
+                });
+                templateList.appendChild(li);
+            });
         });
-    });
 
-    function generateAdjacencyMatrix(vertexCount) {
+    // Функция для обновления формы на основе выбранного шаблона
+    function updateForm(vertexCount, matrix) {
+        const vertexCountInput = document.getElementById('vertex-count');
+        const matrixContainer = document.getElementById('matrix-container');
+
+        // Обновляем количество вершин
+        vertexCountInput.value = vertexCount;
+
+        // Генерируем матрицу
         matrixContainer.innerHTML = '';
         const table = document.createElement('table');
         table.className = 'matrix-table';
 
         // Заголовок столбцов
         const headerRow = document.createElement('tr');
-        headerRow.appendChild(document.createElement('th')); // пустой уголок
+        headerRow.appendChild(document.createElement('th')); // Пустой уголок
         for (let i = 1; i <= vertexCount; i++) {
             const th = document.createElement('th');
             th.textContent = i;
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         table.appendChild(headerRow);
 
-        // Строки
+        // Строки матрицы
         for (let i = 1; i <= vertexCount; i++) {
             const row = document.createElement('tr');
             const rowHeader = document.createElement('th');
@@ -52,9 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 input.type = 'number';
                 input.min = '0';
                 input.max = '1';
-                input.value = '0';
+                input.value = matrix[i - 1][j - 1]; // Подставляем значения из шаблона
                 input.className = 'matrix-input';
-                // ОЧЕНЬ важно: имя = cell-i-j
                 input.name = `cell-${i - 1}-${j - 1}`;
                 input.dataset.row = i - 1;
                 input.dataset.col = j - 1;

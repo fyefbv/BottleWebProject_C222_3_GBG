@@ -24,9 +24,9 @@
                         <div class="theory-left">
                             <div class="matrix-container">
                                 <p class="matrix-label">Матрица смежности:</p>
-                                <pre>1 1 0
-1 1 1
-0 1 1</pre>
+                                <pre>0 1 0
+0 0 1
+1 0 0</pre>
                             </div>
                             <img src="/static/images/cyclic_graph.png" alt="Пример графа с циклом" class="example-image">
                         </div>
