@@ -9,6 +9,7 @@ class GraphBuilder:
         self.G = nx.DiGraph()
         self.G.add_nodes_from(range(self.vertex_count))
 
+    # Строит граф на основе матрицы смежности (возвращает экземпляр nx.DiGraph с добавленными рёбрами)
     def build_graph(self):
         self.G.remove_edges_from(list(self.G.edges()))
         for i in range(self.vertex_count):
@@ -17,6 +18,7 @@ class GraphBuilder:
                     self.G.add_edge(i, j)
         return self.G
 
+    # Возвращает список смежности графа в виде словаря {вершина: [список соседей]}
     def get_adjacency_list(self):
         if self.G.number_of_edges() == 0:
             self.build_graph()

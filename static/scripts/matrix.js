@@ -14,42 +14,47 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Генерация ориентированной матрицы: для каждой пары (i<j) 0 или 1, а обратная ячейка ставится в 0.
-    // Диагональ всегда 0.
     generateBtn.addEventListener('click', function (e) {
         e.preventDefault();
 
         const n = parseInt(vertexCountInput.value) || 0;
         if (n <= 0 || n > 15) return;
 
-        // Функция-помощник: получить элемент input по его координатам
+        // Функция для получения <input> по координатам i,j
         function getInput(i, j) {
             return matrixContainer.querySelector(`input[name="cell-${i}-${j}"]`);
         }
 
-        // Для всех i<j генерируем случайную грань, обратную ставим 0
+        // Сначала обнуляем всю таблицу (чтобы не оставалось старых значений)
         for (let i = 0; i < n; i++) {
-            // Ставим 0 на диагонали
-            const diagInput = getInput(i, i);
-            if (diagInput) {
-                diagInput.value = '0';
-                diagInput.classList.remove('invalid');
+            for (let j = 0; j < n; j++) {
+                const inp = getInput(i, j);
+                if (inp) {
+                    inp.value = '0';
+                    inp.classList.remove('invalid');
+                }
             }
+        }
 
+        for (let i = 0; i < n; i++) {
+            // Диагональ остаётся 0 (она уже сброшена)
             for (let j = i + 1; j < n; j++) {
-                const bit = Math.random() < 0.5 ? '1' : '0';
+                const choice = Math.floor(Math.random() * 3);
                 const inpIJ = getInput(i, j);
                 const inpJI = getInput(j, i);
 
-                if (inpIJ) {
-                    inpIJ.value = bit;
-                    inpIJ.classList.remove('invalid');
+                if (choice === 1) {
+                    if (inpIJ) inpIJ.value = '1';
+                    if (inpJI) inpJI.value = '0';
+                } else if (choice === 2) {
+                    if (inpIJ) inpIJ.value = '0';
+                    if (inpJI) inpJI.value = '1';
+                } else {
+                    if (inpIJ) inpIJ.value = '0';
+                    if (inpJI) inpJI.value = '0';
                 }
-                if (inpJI) {
-                    // чтобы матрица оставалась ориентированной, противоположную ячейку сбрасываем в 0
-                    inpJI.value = '0';
-                    inpJI.classList.remove('invalid');
-                }
+                if (inpIJ) inpIJ.classList.remove('invalid');
+                if (inpJI) inpJI.classList.remove('invalid');
             }
         }
     });

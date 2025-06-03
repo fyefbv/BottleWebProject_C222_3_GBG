@@ -25,11 +25,6 @@
                     <h2>Готовые шаблоны</h2>
                     <ul id="template-list"></ul>
                 </aside>
-
-                <aside class="template-aside">
-                    <h2>Сохраненные шаблоны</h2>
-                    <ul id="save-template-list"></ul>
-                </aside>
             </div>
 
             <!-- Основной контент справа -->

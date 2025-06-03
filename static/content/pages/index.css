@@ -10,7 +10,7 @@
 /* Список шаблонов */
 .template-aside {
     width: 240px;
-    height: 50%;
+    height: 100%;
     background: #ffffff;
     padding: 15px;
     border-radius: 12px;
@@ -28,12 +28,11 @@
     list-style: none;
     padding: 0;
     max-height: 300px;
-    overflow-y: auto;
     margin-bottom: 15px;
 }
 
 .template-aside li {
-    padding: 8px;
+    padding: 16px;
     border-bottom: 1px solid #b2dfdb;
     cursor: pointer;
     transition: background 0.2s;

@@ -1,76 +1,41 @@
-import os
 import json
 import datetime
 from bottle import request, template, post
 from graph_operations.graph_builder import GraphBuilder
+from graph_operations.graph_loader import load_json_list, save_json_list
 
-# Пути к JSON-файлам
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-USER_DATA_FILE = os.path.join(BASE_DIR, "data", "input_data.json")
-ALGORITHM_LOGS = os.path.join(BASE_DIR, "data", "logs.json")
-
-def _load_json_list(filepath):
-    if not os.path.exists(filepath):
-        return []
-    try:
-        with open(filepath, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            return data if isinstance(data, list) else []
-    except (json.JSONDecodeError, IOError):
-        return []
-
-def _save_json_list(filepath, lst):
-    folder = os.path.dirname(filepath)
-    if not os.path.exists(folder):
-        os.makedirs(folder)
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(lst, f, ensure_ascii=False, indent=2)
+USER_DATA_FILE = 'data/input_data.json'
+ALGORITHM_LOGS = 'data/logs.json'
 
 @post('/build_graph')
-def build_graph_handler():
-    """Обрабатывает POST-запрос для построения графа"""
+def index_handler():
     year = datetime.datetime.now().year
 
-    # 1. Читаем количество вершин
-    try:
-        vertex_count = int(request.forms.get('vertex-count', 0))
-    except (TypeError, ValueError):
-        return template('index',
-                        title='Главная страница',
-                        year=year,
-                        graph_json=''
-        )
+    vertex_count = int(request.forms.get('vertex-count', 0))
 
-    if vertex_count < 1 or vertex_count > 15:
-        return template('index',
-                        title='Главная страница',
-                        year=year,
-                        graph_json=''
-        )
-
-    # 2. Собираем матрицу смежности
+    # Собираем матрицу смежности
     adjacency_matrix = []
     for i in range(vertex_count):
         row = []
         for j in range(vertex_count):
-            field_name = f"cell-{i}-{j}"
-            raw_val = request.forms.get(field_name, '0')
-            val = int(raw_val) if raw_val.isdigit() else 0
-            val = 1 if val == 1 else 0  # Только 0 или 1
-            row.append(val)
+            raw_val = request.forms.get(f'cell-{i}-{j}', '0')
+            try:
+                val = int(raw_val)
+            except ValueError:
+                val = 0
+            row.append(1 if val == 1 else 0)
         adjacency_matrix.append(row)
 
-    # 3. Сохраняем данные в JSON
-    user_entries = _load_json_list(USER_DATA_FILE)
-    user_record = {
-        "timestamp": datetime.datetime.now().isoformat(),
+    # Сохраняем введённую матрицу в input_data.json
+    user_entries = load_json_list(USER_DATA_FILE)
+    user_entries.append({
+        "timestamp": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         "vertex_count": vertex_count,
         "adjacency_matrix": adjacency_matrix
-    }
-    user_entries.append(user_record)
-    _save_json_list(USER_DATA_FILE, user_entries)
+    })
+    save_json_list(USER_DATA_FILE, user_entries)
 
-    # 4. Строим граф
+    # Строим граф и готовим JSON для D3.js
     try:
         builder = GraphBuilder(adjacency_matrix)
         G = builder.build_graph()
@@ -79,23 +44,24 @@ def build_graph_handler():
         return template('index',
                         title='Главная страница',
                         year=year,
-                        graph_json=''
-        )
+                        graph_json='')
 
-    # 5. Логируем рёбра
-    log_entries = _load_json_list(ALGORITHM_LOGS)
-    run_log = {
-        "run_timestamp": datetime.datetime.now().isoformat(),
+    # Логируем добавление рёбер в logs.json
+    log_entries = load_json_list(ALGORITHM_LOGS)
+    log_entries.append({
+        "run_timestamp": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         "vertex_count": vertex_count,
         "edges_added": [
-            {"timestamp": datetime.datetime.now().isoformat(), "action": "add_edge", "from": i, "to": j}
-            for i in range(vertex_count) for j in range(vertex_count) if adjacency_matrix[i][j] == 1
+            {"timestamp": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+             "action": "add_edge", "from": i, "to": j}
+            for i in range(vertex_count)
+            for j in range(vertex_count)
+            if adjacency_matrix[i][j] == 1
         ]
-    }
-    log_entries.append(run_log)
-    _save_json_list(ALGORITHM_LOGS, log_entries)
+    })
+    save_json_list(ALGORITHM_LOGS, log_entries)
 
-    # 6. Возвращаем данные для шаблона
+    # Отдаём шаблон с graph_json
     return template('index',
                     title='Главная страница',
                     year=year,

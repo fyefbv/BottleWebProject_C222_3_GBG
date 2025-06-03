@@ -46,7 +46,7 @@
 }
 
 .property-result {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0.5rem 0;
     color: #2c3e50;
@@ -66,8 +66,7 @@
 .cycle-list li {
     padding: 0.25rem 0;
     border-bottom: 1px solid #e0e0e0;
-    font-family: monospace;
-    font-size: 0.95rem;
+    font-size: 1.25rem;
 }
 
 .cycle-list li:last-child {

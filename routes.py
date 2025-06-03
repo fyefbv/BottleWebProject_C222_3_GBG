@@ -2,14 +2,14 @@
 Routes and views for the bottle application.
 """
 
-from bottle import route, view
+from bottle import route, view, get
 from datetime import datetime
 from graph_operations.graph_loader import get_adjacency_matrix, get_graph_json
-from handlers.handler_index import build_graph_handler
+from handlers.handler_index import index_handler
 from handlers.handler_cycle_detection import cycle_detection_handler
 
-@route('/')
-@route('/home')
+@get('/')
+@get('/home')
 @view('index')
 def home():
     """Отображает главную страницу"""
@@ -37,16 +37,16 @@ def equivalence():
         year=datetime.now().year
     )
 
-# @route('/cycle_detection')
-# @view('cycle_detection')
-# def cycle_detection():
-#     """Отображает страницу поиска циклов в графе"""
-#     return dict(
-#         title='Поиск циклов в графе',
-#         graph_json = get_graph_json(),
-#         adjacency_matrix = get_adjacency_matrix(),
-#         year=datetime.now().year
-#     )
+@get('/cycle_detection')
+@view('cycle_detection')
+def cycle_detection():
+    return dict(
+        title='Поиск циклов в графе',
+        year=datetime.now().year,
+        adjacency_matrix=None,
+        graph_json=None,
+        cycles=None
+    )
 
 @route('/max_flow')
 @view('max_flow')

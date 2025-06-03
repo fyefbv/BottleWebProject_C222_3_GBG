@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
                 templateList.appendChild(li);
             });
+        })
+        .catch(err => {
+            console.error("Не удалось загрузить готовые шаблоны:", err);
         });
 
     // Функция для обновления формы на основе выбранного шаблона
