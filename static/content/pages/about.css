@@ -1,1 +1,44 @@
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    color: #2c3e50;
+    line-height: 1.7;
+    font-size: 16px;
+}
 
+    .about-container h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    .about-container h2 {
+        font-size: 22px;
+        margin-top: 30px;
+        color: #2980b9;
+    }
+
+    .about-container p {
+        margin-bottom: 15px;
+    }
+
+    .about-container code {
+        background-color: #f0f0f0;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 90%;
+    }
+
+.authors {
+    margin-top: 40px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+}

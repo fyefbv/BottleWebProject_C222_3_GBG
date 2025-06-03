@@ -2,16 +2,20 @@
 Routes and views for the bottle application.
 """
 
-from bottle import route, view
+from bottle import route, view, get
 from datetime import datetime
+from graph_operations.graph_loader import get_adjacency_matrix, get_graph_json
+from handlers.handler_index import index_handler
+from handlers.handler_cycle_detection import cycle_detection_handler
 
-@route('/')
-@route('/home')
+@get('/')
+@get('/home')
 @view('index')
 def home():
     """Отображает главную страницу"""
     return dict(
         title='Главная страница',
+        graph_json = '',
         year=datetime.now().year
     )
 
@@ -26,25 +30,27 @@ def about():
 
 @route('/equivalence')
 @view('equivalence')
-def about():
+def equivalence():
     """Отображает страницу определения свойств графа"""
     return dict(
         title='Определение свойств графа',
         year=datetime.now().year
     )
 
-@route('/cycle_detection')
+@get('/cycle_detection')
 @view('cycle_detection')
-def about():
-    """Отображает страницу поиска циклов в графе"""
+def cycle_detection():
     return dict(
         title='Поиск циклов в графе',
-        year=datetime.now().year
+        year=datetime.now().year,
+        adjacency_matrix=None,
+        graph_json=None,
+        cycles=None
     )
 
 @route('/max_flow')
 @view('max_flow')
-def about():
+def max_flow():
     """Отображает страницу поиска максимального потока"""
     return dict(
         title='Поиск максимального потока',

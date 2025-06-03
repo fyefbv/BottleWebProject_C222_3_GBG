@@ -1,1 +1,110 @@
+/* max_flow.css - минимальные дополнения */
+
+/* Стили для кнопок ввода */
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+    .button-row button {
+        font-size: 16px;
+    }
+
+
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+
+    .btn.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .btn.primary {
+        background-color: #00897b;
+        color: white;
+        border-color: #00796b;
+    }
+
+/* Адаптация матрицы ввода */
+.matrix-table {
+    width: 100%;
+}
+
+    .matrix-table th {
+        padding: 8px;
+        text-align: center;
+    }
+
+.matrix-input {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Дополнительные иконки */
+.property-explanation .fa-water {
+    color: #039be5;
+}
+
+.property-explanation .fa-project-diagram {
+    color: #7b1fa2;
+}
+/* Граф-контейнер */
+#graph-container {
+    position: relative !important;
+    min-height: 300px;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 2.0rem !important;
+}
+
+
+/* Плейсхолдер */
+.graph-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.result-section {
+    margin-top: 30px; /* или любое другое значение в px/rem */
+}
+
+/* Горизонтальный контейнер для данных и графа */
+.data-graph-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+
+
+
 

@@ -7,10 +7,10 @@
     margin-bottom: 20px;
 }
 
-/* Сайдбар шаблонов */
+/* Список шаблонов */
 .template-aside {
     width: 240px;
-    height: 50%;
+    height: 100%;
     background: #ffffff;
     padding: 15px;
     border-radius: 12px;
@@ -28,12 +28,11 @@
     list-style: none;
     padding: 0;
     max-height: 300px;
-    overflow-y: auto;
     margin-bottom: 15px;
 }
 
 .template-aside li {
-    padding: 8px;
+    padding: 16px;
     border-bottom: 1px solid #b2dfdb;
     cursor: pointer;
     transition: background 0.2s;
@@ -72,8 +71,9 @@
 }
 
 /* Область графа */
-.graph-area {
-    height: 400px;
+#graph-area {
+    width: 100%;
+    height: 600px;
     border: 2px dashed #4db6ac;
     border-radius: 10px;
     position: relative;
@@ -90,7 +90,7 @@
 
 /* Кнопки */
 .btn {
-    width: 100%;
+    width: 30%;
     display: inline-block;
     padding: 10px 20px;
     background: #00897b;
@@ -116,8 +116,14 @@
 /* Методы анализа */
 .method-list {
     width: 100%;
+    align-content: center;
     list-style: none;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
 .method-list li {
@@ -129,8 +135,14 @@
 }
 
 .method-btn {
-    padding: 12px 15px;
-    text-align: left;
+    padding: 12px 6px;
+    width: 300px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 12px;
+    gap: 2px;
+    align-items: center;
 }
 
 .method-icon {
@@ -140,11 +152,7 @@
     font-weight: bold;
 }
 
-.method-text {
-    flex: 1;
-}
-
-/* Кнопка скролла */
+/* Круглая кнопка скролла */
 .scroll-btn {
     position: absolute;
     top: 50%;
@@ -219,6 +227,7 @@
     animation: tooltip-pulse 1.5s infinite;
 }
 
+/* Матрица */
 .main-matrix-container {
     overflow-x: auto;
     margin-top: 0.5rem;

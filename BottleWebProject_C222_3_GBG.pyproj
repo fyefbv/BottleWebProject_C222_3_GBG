@@ -42,6 +42,9 @@
     <Compile Include="graph_operations\graph_builder.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="graph_operations\graph_loader.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="handlers\handler_equivalence.py">
       <SubType>Code</SubType>
     </Compile>
@@ -74,6 +77,7 @@
     <Folder Include="data\" />
     <Folder Include="static\content\pages\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\data\" />
     <Folder Include="tests\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
@@ -86,6 +90,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="data\logs.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="static\data\templates.json">
       <SubType>Code</SubType>
     </Content>
     <Content Include="requirements.txt" />
@@ -105,7 +112,13 @@
     <Resource Include="static\images\cyclic_graph.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
+    <Content Include="static\scripts\check_graph.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\scripts\collapse-block.js" />
+    <Content Include="static\scripts\graph.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="static\scripts\jquery-1.10.2.js" />
     <Content Include="static\scripts\jquery-1.10.2.min.js" />
@@ -120,6 +133,9 @@
     <Content Include="static\scripts\respond.js" />
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\scroll.js" />
+    <Content Include="static\scripts\templates.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
     <Content Include="views\equivalence.tpl" />
