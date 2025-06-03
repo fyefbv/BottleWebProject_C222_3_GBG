@@ -202,21 +202,21 @@
     .property-card h3 {
         margin-top: 0;
         color: #004d40;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 
 .property-result {
     text-align: center;
     margin: 10px 0;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #00695c;
 }
 
 .property-description {
     color: #455a64;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     text-align: center;
     margin-top: 10px;
 }
@@ -239,7 +239,7 @@
     .closure-card h3 {
         margin-top: 0;
         color: #006064;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 
@@ -283,4 +283,42 @@
     .closures-grid {
         grid-template-columns: 1fr;
     }
+}
+/* Стили для отображения результатов */
+.property-result span {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+}
+
+.valid {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.invalid {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+pre {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    line-height: 1.4;
+    max-height: 200px;
+    overflow: auto;
+}
+
+/* Стили для визуализации графа */
+#d3-graph {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
 }

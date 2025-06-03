@@ -3,22 +3,6 @@
 <head>
     <link rel="stylesheet" href="/static/content/pages/equivalence.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        function toggleTheory() {
-            const theoryBlock = document.getElementById("theory-block");
-            const toggleIcon = document.querySelector(".theory-toggle i");
-            
-            if (theoryBlock.style.display === "none") {
-                theoryBlock.style.display = "block";
-                toggleIcon.classList.remove("fa-chevron-down");
-                toggleIcon.classList.add("fa-chevron-up");
-            } else {
-                theoryBlock.style.display = "none";
-                toggleIcon.classList.remove("fa-chevron-up");
-                toggleIcon.classList.add("fa-chevron-down");
-            }
-        }
-    </script>
 </head>
                                                                    
 <body>
@@ -29,9 +13,9 @@
 
         <main class="content">
 
-<!-- Обновленный теоретический блок -->
+<!-- Теоретический блок -->
 <section class="card">
-    <button class="btn theory-toggle" onclick="toggleTheory()">
+    <button class="theory-toggle" onclick="toggleTheory()">
         <span>Теоретический материал</span>
         <i class="fas fa-chevron-down"></i>
     </button>
@@ -175,4 +159,5 @@
 
         </main>
     </div>
+    <script src="/static/scripts/collapse-block.js"></script>
 </body>

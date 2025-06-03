@@ -23,7 +23,6 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/home">Главная</a></li>
-                    <li><a href="/equivalence">Эквивалентность</a></li>
                     <li><a href="/about">Об авторах</a></li>
                 </ul>
             </div>
