@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // При загрузке создаём матрицу по умолчанию
     generateAdjacencyMatrix(parseInt(vertexCountInput.value));
 
-    // Перестраиваем таблицу, когда меняется количество вершин
     vertexCountInput.addEventListener('input', function () {
         const count = parseInt(this.value) || 0;
         if (count > 0 && count <= 15) {
@@ -20,12 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const n = parseInt(vertexCountInput.value) || 0;
         if (n <= 0 || n > 15) return;
 
-        // Функция для получения <input> по координатам i,j
         function getInput(i, j) {
             return matrixContainer.querySelector(`input[name="cell-${i}-${j}"]`);
         }
 
-        // Сначала обнуляем всю таблицу (чтобы не оставалось старых значений)
+        // Обнуляем все значения
         for (let i = 0; i < n; i++) {
             for (let j = 0; j < n; j++) {
                 const inp = getInput(i, j);
@@ -36,30 +34,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
+        // Генерация случайных значений (кроме диагонали)
         for (let i = 0; i < n; i++) {
-            // Диагональ остаётся 0 (она уже сброшена)
-            for (let j = i + 1; j < n; j++) {
-                const choice = Math.floor(Math.random() * 3);
-                const inpIJ = getInput(i, j);
-                const inpJI = getInput(j, i);
+            for (let j = 0; j < n; j++) {
+                if (i === j) continue;
 
-                if (choice === 1) {
-                    if (inpIJ) inpIJ.value = '1';
-                    if (inpJI) inpJI.value = '0';
-                } else if (choice === 2) {
-                    if (inpIJ) inpIJ.value = '0';
-                    if (inpJI) inpJI.value = '1';
-                } else {
-                    if (inpIJ) inpIJ.value = '0';
-                    if (inpJI) inpJI.value = '0';
-                }
-                if (inpIJ) inpIJ.classList.remove('invalid');
-                if (inpJI) inpJI.classList.remove('invalid');
+                const inp = getInput(i, j);
+                const random = Math.random() < 0.5 ? '0' : '1';
+                if (inp) inp.value = random;
             }
         }
     });
 
-    // При ручном вводе: если пользователь ставит "1" в [i,j], то [j,i] обнуляем.
     function attachInputListener(input) {
         input.addEventListener('input', function () {
             if (this.value !== '0' && this.value !== '1') {
@@ -71,30 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const i = parseInt(this.dataset.row);
             const j = parseInt(this.dataset.col);
-            if (this.value === '1' && i !== j) {
-                // Обнуляем зеркальную ячейку
-                const opposite = matrixContainer.querySelector(`input[name="cell-${j}-${i}"]`);
-                if (opposite) {
-                    opposite.value = '0';
-                    opposite.classList.remove('invalid');
-                }
-            }
+
+            // Диагональ всегда должна оставаться 0
             if (i === j && this.value === '1') {
-                // на диагонали всегда 0
                 this.value = '0';
             }
+
+            // Удалена логика зеркального обнуления
         });
     }
 
-    // После создания таблицы присоединяем слушатели к каждому input
     function generateAdjacencyMatrix(vertexCount) {
         matrixContainer.innerHTML = '';
         const table = document.createElement('table');
         table.className = 'matrix-table';
 
-        // Заголовок столбцов
         const headerRow = document.createElement('tr');
-        headerRow.appendChild(document.createElement('th')); // пустая ячейка
+        headerRow.appendChild(document.createElement('th'));
         for (let i = 1; i <= vertexCount; i++) {
             const th = document.createElement('th');
             th.textContent = i;
@@ -102,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         table.appendChild(headerRow);
 
-        // Строки матрицы
         for (let i = 1; i <= vertexCount; i++) {
             const row = document.createElement('tr');
             const rowHeader = document.createElement('th');
@@ -121,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 input.dataset.row = i - 1;
                 input.dataset.col = j - 1;
 
-                // Присоединяем слушатель, гарантирующий ориентированность
                 attachInputListener(input);
 
                 cell.appendChild(input);

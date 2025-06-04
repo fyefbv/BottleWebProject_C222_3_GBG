@@ -19,6 +19,9 @@
     <Name>BottleWebProject_C222_3_GBG</Name>
     <RootNamespace>BottleWebProject_C222_3_GBG</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,6 +48,9 @@
     <Compile Include="graph_operations\graph_loader.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="graph_operations\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="handlers\handler_equivalence.py">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +61,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="handlers\handler_index.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="handlers\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
@@ -68,6 +77,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tests\test_index.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

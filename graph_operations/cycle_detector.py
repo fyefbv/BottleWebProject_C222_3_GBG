@@ -61,6 +61,12 @@ class CycleDetector:
         rotations = [base[i:] + base[:i] for i in range(n)]
         # Находим минимальную ротацию
         min_rot = min(rotations)
+
+        # Проверяем обратное направление
+        rev_rot = min_rot[::-1]
+
+        if rev_rot < min_rot:
+            min_rot = rev_rot
         
         # Формируем строковое представление
         return "-".join(str(v) for v in min_rot + [min_rot[0]])
