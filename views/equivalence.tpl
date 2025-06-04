@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title='Определение свойств графа', year=year)
+% rebase('layout.tpl', title=title, year=year, graph_json=graph_json)
 
 <head>
     <link rel="stylesheet" href="/static/content/pages/equivalence.css">
@@ -15,7 +15,7 @@
 
 <!-- Теоретический блок -->
 <section class="card">
-    <button class="theory-toggle" onclick="toggleTheory()">
+    <button class="btn theory-toggle" onclick="toggleTheory()">
         <span>Теоретический материал</span>
         <i class="fas fa-chevron-down"></i>
     </button>
@@ -74,40 +74,57 @@
     </div>
 </section>
 
-            <!-- Горизонтальные блоки: входные данные и граф -->
-            <div class="data-graph-container">
-                <!-- Блок с входными данными -->
+            <!-- Блоки данных и графа -->
+           <div class="data-graph-container">
+                <!-- Входные данные -->
                 <section class="card input-data">
                     <h2>Входные данные</h2>
-                    <div class="info-block">
-                        <p><strong>Количество вершин:</strong> <span id="vertex-count-display">–</span></p>
-                    </div>
-                    <div class="info-block">
-                        <p><strong>Матрица смежности:</strong></p>
-                        <pre id="adjacency-matrix-display">–</pre>
-                    </div>
+                    % if results:
+                        <div class="info-block">
+                            <p><strong>Количество вершин:</strong> {{ results['vertex_count'] }}</p>
+                        </div>
+                        <div class="matrix-container">
+                            <p><strong>Матрица смежности:</strong></p>
+                            <pre>{{ results['adjacency_matrix'] }}</pre>
+                        </div>
+                    % else:
+                        <div class="info-block">
+                            <p><i class="fas fa-exclamation-triangle"></i> Данные графа не загружены</p>
+                            <a href="/" class="btn btn-primary">
+                                <i class="fas fa-project-diagram"></i> Построить граф
+                            </a>
+                        </div>
+                    % end
                 </section>
 
-                <!-- Блок с графом -->
-                <section class="card graph-area" id="graph-area">
-                    <h2>Визуализация графа</h2>
-                    <div id="graph-container">
-                        <div class="graph-placeholder">
-                            <i class="fas fa-project-diagram"></i>
-                            <p>Граф будет отображен после анализа</p>
-                        </div>
-                    </div>
-                </section>
+                <!-- Визуализация графа -->
+   <section class="card graph-area" id="graph-area">
+    <h2>Визуализация графа</h2>
+    % if graph_json:
+        <div id="d3-graph"></div>
+    % else:
+        <div class="graph-placeholder">
+            <i class="fas fa-project-diagram"></i>
+            <p>Граф будет отображен после анализа</p>
+        </div>
+    % end
+</section>
             </div>
 
-            <!-- Блок с результатами анализа -->
+            <!-- Результаты анализа -->
             <section class="card result-section">
                 <h2>Свойства отношения</h2>
                 <div class="properties-grid">
                     <div class="property-card">
                         <h3>Рефлексивность</h3>
                         <div class="property-result">
-                            <span id="reflexivity-result">–</span>
+                            % if results:
+                                <span class="{{ 'valid' if results['is_reflexive'] else 'invalid' }}">
+                                    {{ 'Да' if results['is_reflexive'] else 'Нет' }}
+                                </span>
+                            % else:
+                                <span>–</span>
+                            % end
                         </div>
                         <div class="property-description">
                             Все диагональные элементы равны 1
@@ -117,7 +134,13 @@
                     <div class="property-card">
                         <h3>Симметричность</h3>
                         <div class="property-result">
-                            <span id="symmetry-result">–</span>
+                            % if results:
+                                <span class="{{ 'valid' if results['is_symmetric'] else 'invalid' }}">
+                                    {{ 'Да' if results['is_symmetric'] else 'Нет' }}
+                                </span>
+                            % else:
+                                <span>–</span>
+                            % end
                         </div>
                         <div class="property-description">
                             Матрица совпадает со своей транспонированной версией
@@ -127,7 +150,13 @@
                     <div class="property-card">
                         <h3>Транзитивность</h3>
                         <div class="property-result">
-                            <span id="transitivity-result">–</span>
+                            % if results:
+                                <span class="{{ 'valid' if results['is_transitive'] else 'invalid' }}">
+                                    {{ 'Да' if results['is_transitive'] else 'Нет' }}
+                                </span>
+                            % else:
+                                <span>–</span>
+                            % end
                         </div>
                         <div class="property-description">
                             Если A→B и B→C, то обязательно A→C
@@ -136,23 +165,35 @@
                 </div>
             </section>
 
-            <!-- Блок с замыканиями -->
+            <!-- Замыкания -->
             <section class="card closure-section">
                 <h2>Замыкания</h2>
                 <div class="closures-grid">
-                    <div class="closure-card">
+                    <div class="matrix-container">
                         <h3>Рефлексивное</h3>
-                        <pre id="reflexive-closure">–</pre>
+                        % if results:
+                            <pre>{{ results['reflexive_closure'] }}</pre>
+                        % else:
+                            <pre>–</pre>
+                        % end
                     </div>
                     
-                    <div class="closure-card">
+                    <div class="matrix-container">
                         <h3>Симметричное</h3>
-                        <pre id="symmetric-closure">–</pre>
+                        % if results:
+                            <pre>{{ results['symmetric_closure'] }}</pre>
+                        % else:
+                            <pre>–</pre>
+                        % end
                     </div>
                     
-                    <div class="closure-card">
+                    <div class="matrix-container">
                         <h3>Транзитивное</h3>
-                        <pre id="transitive-closure">–</pre>
+                        % if results:
+                            <pre>{{ results['transitive_closure'] }}</pre>
+                        % else:
+                            <pre>–</pre>
+                        % end
                     </div>
                 </div>
             </section>
@@ -160,4 +201,12 @@
         </main>
     </div>
     <script src="/static/scripts/collapse-block.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    % if graph_json:
+        <script>
+            var graphData = {{!graph_json}};
+        </script>
+        <script src="/static/scripts/graph.js"></script>
+    % end
 </body>
