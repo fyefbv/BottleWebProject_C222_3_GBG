@@ -4,19 +4,19 @@ from graph_operations.cycle_detector import CycleDetector
 class TestCycleDetector(unittest.TestCase):
     def test_acyclic_graphs(self):
         cases = [
-            # 1. Пустой граф
+            # 1. РџСѓСЃС‚РѕР№ РіСЂР°С„
             (
                 [], 
                 []
             ),
             
-            # 2. Одна вершина без ребер
+            # 2. РћРґРЅР° РІРµСЂС€РёРЅР° Р±РµР· СЂРµР±РµСЂ
             (
                 [[0]], 
                 []
             ),
             
-            # 3. Две вершины, однонаправленное ребро
+            # 3. Р”РІРµ РІРµСЂС€РёРЅС‹, РѕРґРЅРѕРЅР°РїСЂР°РІР»РµРЅРЅРѕРµ СЂРµР±СЂРѕ
             (
                 [
                     [0, 1],
@@ -25,7 +25,7 @@ class TestCycleDetector(unittest.TestCase):
                 []
             ),
             
-            # 4. Три вершины, цепочка без циклов
+            # 4. РўСЂРё РІРµСЂС€РёРЅС‹, С†РµРїРѕС‡РєР° Р±РµР· С†РёРєР»РѕРІ
             (
                 [
                     [0, 1, 0],
@@ -35,7 +35,7 @@ class TestCycleDetector(unittest.TestCase):
                 []
             ),
             
-            # 5. Граф в форме звезды
+            # 5. Р“СЂР°С„ РІ С„РѕСЂРјРµ Р·РІРµР·РґС‹
             (
                 [
                     [0, 1, 1, 1], 
@@ -47,15 +47,14 @@ class TestCycleDetector(unittest.TestCase):
             )
         ]
 
-        for i, (matrix, expected) in enumerate(cases, start=1):
-            with self.subTest(f"acyclic_case_{i}"):
-                detector = CycleDetector(matrix)
-                cycles = detector.find_cycles()
-                self.assertEqual(cycles, expected)
+        for (matrix, expected) in cases:
+            detector = CycleDetector(matrix)
+            cycles = detector.find_cycles()
+            self.assertEqual(cycles, expected)
 
     def test_simple_cycles(self):
         cases = [
-            # 1. Двунаправленный цикл из двух вершин
+            # 1. Р”РІСѓРЅР°РїСЂР°РІР»РµРЅРЅС‹Р№ С†РёРєР» РёР· РґРІСѓС… РІРµСЂС€РёРЅ
             (
                 [
                     [0, 1],
@@ -64,7 +63,7 @@ class TestCycleDetector(unittest.TestCase):
                 ['0-1-0']
             ),
             
-            # 2. Треугольник
+            # 2. РўСЂРµСѓРіРѕР»СЊРЅРёРє
             (
                 [
                     [0, 1, 0], 
@@ -74,7 +73,7 @@ class TestCycleDetector(unittest.TestCase):
                 ['0-1-2-0']
             ),
             
-            # 3. Квадрат (4 вершины)
+            # 3. РљРІР°РґСЂР°С‚ (4 РІРµСЂС€РёРЅС‹)
             (
                 [
                     [0, 1, 0, 0], 
@@ -85,7 +84,7 @@ class TestCycleDetector(unittest.TestCase):
                 ['0-1-2-3-0']
             ),
             
-            # 4. Пятивершинный цикл
+            # 4. РџСЏС‚РёРІРµСЂС€РёРЅРЅС‹Р№ С†РёРєР»
             (
                 [
                     [0, 1, 0, 0, 0], 
@@ -97,7 +96,7 @@ class TestCycleDetector(unittest.TestCase):
                 ['0-1-2-3-4-0']
             ),
             
-            # 5. Два независимых цикла
+            # 5. Р”РІР° РЅРµР·Р°РІРёСЃРёРјС‹С… С†РёРєР»Р°
             (
                 [
                     [0, 1, 0, 0], 
@@ -109,15 +108,15 @@ class TestCycleDetector(unittest.TestCase):
             )
         ]
 
-        for i, (matrix, expected) in enumerate(cases, start=1):
-            with self.subTest(f"simple_cycle_case_{i}"):
-                detector = CycleDetector(matrix)
-                cycles = detector.find_cycles()
-                self.assertEqual(sorted(cycles), sorted(expected))
+        for (matrix, expected) in cases:
+            detector = CycleDetector(matrix)
+            cycles = detector.find_cycles()
+            self.assertEqual(sorted(cycles), sorted(expected))
+                
 
     def test_complex_cycles(self):
         cases = [
-            # 1. Два цикла с общей вершиной
+            # 1. Р”РІР° С†РёРєР»Р° СЃ РѕР±С‰РµР№ РІРµСЂС€РёРЅРѕР№
             (
                 [
                     [0, 1, 0, 0, 0],
@@ -129,7 +128,7 @@ class TestCycleDetector(unittest.TestCase):
                 ['0-1-2-0', '3-4-3']
             ),
             
-            # 2. Полный граф на 3 вершинах с дополнительной вершиной
+            # 2. РџРѕР»РЅС‹Р№ РіСЂР°С„ РЅР° 3 РІРµСЂС€РёРЅР°С… СЃ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕР№ РІРµСЂС€РёРЅРѕР№
             (
                 [
                     [0, 1, 1, 1],
@@ -140,7 +139,7 @@ class TestCycleDetector(unittest.TestCase):
                 ['0-1-0', '0-3-0', '0-1-2-0', '1-2-1']
             ),
 
-            # 3. Треугольник и отдельный цикл
+            # 3. РўСЂРµСѓРіРѕР»СЊРЅРёРє Рё РѕС‚РґРµР»СЊРЅС‹Р№ С†РёРєР»
             (
                 [
                     [0, 1, 0, 0, 0],
@@ -152,7 +151,7 @@ class TestCycleDetector(unittest.TestCase):
                 ['0-1-2-0', '3-4-3']
             ),
 
-            # 4. Граф с пересекающимися циклами и общей вершиной
+            # 4. Р“СЂР°С„ СЃ РїРµСЂРµСЃРµРєР°СЋС‰РёРјРёСЃСЏ С†РёРєР»Р°РјРё Рё РѕР±С‰РµР№ РІРµСЂС€РёРЅРѕР№
             (
                 [
                     [0, 1, 1, 0, 0],
@@ -164,7 +163,7 @@ class TestCycleDetector(unittest.TestCase):
                 ['0-1-2-0', '0-1-2-3-4-0']
             ),
 
-            # 5. Граф с вложенными циклами
+            # 5. Р“СЂР°С„ СЃ РІР»РѕР¶РµРЅРЅС‹РјРё С†РёРєР»Р°РјРё
             (
                 [
                     [0, 1, 0, 0, 0, 0],
@@ -178,11 +177,10 @@ class TestCycleDetector(unittest.TestCase):
             )
         ]
 
-        for i, (matrix, expected) in enumerate(cases, start=1):
-            with self.subTest(f"complex_case_{i}"):
-                detector = CycleDetector(matrix)
-                cycles = detector.find_cycles()
-                self.assertEqual(sorted(cycles), sorted(expected))
+        for (matrix, expected) in cases:
+            detector = CycleDetector(matrix)
+            cycles = detector.find_cycles()
+            self.assertEqual(sorted(cycles), sorted(expected))
 
 if __name__ == '__main__':
     unittest.main()
