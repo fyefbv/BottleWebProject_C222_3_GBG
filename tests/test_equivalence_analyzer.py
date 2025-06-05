@@ -1,11 +1,11 @@
 import unittest
 from graph_operations.equivalence_analyzer import EquivalenceAnalyzer
 
-print("Running tests...")
+
 class TestEquivalenceAnalyzer(unittest.TestCase):
     """Набор тестов для анализатора свойств бинарных отношений"""
     
-    # Тестовые случаи (5+ случаев)
+    # Тестовые случаи
     TEST_CASES = [
         # 1 Единичная матрица (рефлексивная, симметричная, транзитивная)
         {
@@ -68,7 +68,7 @@ class TestEquivalenceAnalyzer(unittest.TestCase):
             
         # Не квадратная матрица
         with self.assertRaises(ValueError):
-            EquivalenceAnalyzer([[1, 0], [0, 1], [1, 0]])  # 3 2
+            EquivalenceAnalyzer([[1, 0], [0, 1], [1, 0]])  # 3*2
             
         # Неправильные строки
         with self.assertRaises(ValueError):
