@@ -60,13 +60,23 @@
                         <ul class="method-list">
                             <li>
                                 <form method="POST" action="/cycle_detection">
-                                    <button type="submit" class="btn method-btn" id="cycle-detection-btn">
+                                    <button type="submit" class="btn method-btn">
                                         <span class="method-icon">↻</span>
                                         <span class="method-text">Поиск циклов в графе</span>
                                     </button>
                                 </form>
                             </li>
-                            <li><a href="/max_flow" class="btn method-btn"><span class="method-icon">⇄</span><span class="method-text">Расчет максимального потока</span></a></li>
+                            <li>
+                                <form method="POST" action="/max_flow">
+                                    <button type="submit" class="btn method-btn">
+                                        <span class="method-icon">⇄</span>
+                                        <span class="method-text">Расчет максимального потока</span>
+                                    </button>
+                                </form>
+                            </li>
+                          <!--  <li><a href="/max_flow" class="btn method-btn"><span class="method-icon">⇄</span><span class="method-text">Расчет максимального потока</span></a></li> -->
+
+
                             <li><a href="/equivalence" class="btn method-btn"><span class="method-icon">✓</span><span class="method-text">Анализ отношений эквивалентности</span></a></li>
                         </ul>
                 </section>

@@ -18,20 +18,21 @@ function renderGraph(data) {
     // Определяем стрелки для ориентированных рёбер
     svg.append("defs").append("marker")
         .attr("id", "arrow")
-        .attr("viewBox", "0 -5 10 10")
-        .attr("refX", 15)
+        .attr("viewBox", "0 -5 20 20")
+        .attr("refX", 20) //было 15
         .attr("refY", 0)
-        .attr("markerWidth", 6)
-        .attr("markerHeight", 6)
+        .attr("markerWidth", 15)
+        .attr("markerHeight", 15) //было по 6
         .attr("orient", "auto")
         .append("path")
-        .attr("d", "M0,-5L10,0L0,5")
+        .attr("d", "M0,-5L15,0L0,5") //было -5L10
+        .attr("markerUnits", "userSpaceOnUse")
         .attr("fill", "#999");
 
     // Настраиваем симуляцию силового расположения
     const simulation = d3.forceSimulation(data.nodes)
-        .force("link", d3.forceLink(data.links).id(d => d.id))
-        .force("charge", d3.forceManyBody().strength(-300))
+        .force("link", d3.forceLink(data.links).id(d => d.id).distance(150))
+        .force("charge", d3.forceManyBody().strength(-500))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
     // Отрисовываем рёбра
@@ -43,12 +44,28 @@ function renderGraph(data) {
         .attr("stroke-width", 1)
         .attr("marker-end", "url(#arrow)");
 
+
+
+    //....................................................................................
+    const edgeLabels = svg.append("g")
+        .selectAll(".edge-label")
+        .data(data.links)
+        .enter()
+        .append("text")
+        .attr("class", "edge-label")
+        .attr("font-size", 12) // было 10
+        .attr("fill", "#d32f2f") // Красный цвет для заметности
+        .text(d => d.value || d.weight); // Используем value или weight из данных
+        console.log("links example:", data.links);
+
+
+
     // Отрисовываем вершины
     const node = svg.append("g")
         .selectAll("circle")
         .data(data.nodes)
         .enter().append("circle")
-        .attr("r", 5)
+        .attr("r", 8) //было 5
         .attr("fill", "#1f77b4")
         .call(d3.drag()
             .on("start", dragstarted)
@@ -60,8 +77,8 @@ function renderGraph(data) {
         .selectAll("text")
         .data(data.nodes)
         .enter().append("text")
-        .attr("dx", 8)
-        .attr("dy", ".35em")
+        .attr("dx", 12) //было 8
+        .attr("dy", ".45em") //было 35
         .text(d => d.id);
 
     // Обновляем позиции на каждом тике симуляции
@@ -79,6 +96,15 @@ function renderGraph(data) {
         label
             .attr("x", d => d.x)
             .attr("y", d => d.y);
+
+
+
+
+
+        // Обновляем позиции подписей рёбер........................................................................
+        edgeLabels
+            .attr("x", d => (d.source.x + d.target.x) / 2)
+            .attr("y", d => (d.source.y + d.target.y) / 2);
     });
 
     // Функции для перетаскивания

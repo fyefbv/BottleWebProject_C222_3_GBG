@@ -1,1 +1,3532 @@
-
+[
+  {
+    "run_timestamp": "2025-06-02T12:47:12.386674",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-02T12:47:28.471793",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-02T12:47:28.471793",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-02T12:47:28.471793",
+        "action": "add_edge",
+        "from": 1,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-02T12:47:28.471793",
+        "action": "add_edge",
+        "from": 2,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-02T12:47:28.471793",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-02T12:47:28.471793",
+        "action": "add_edge",
+        "from": 3,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-02T12:48:24.389914",
+    "vertex_count": 5,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-02T12:48:24.389914",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-02T12:48:24.390578",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-02T12:48:24.390578",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-02T12:48:24.390578",
+        "action": "add_edge",
+        "from": 3,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-02T12:48:24.390578",
+        "action": "add_edge",
+        "from": 4,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-02T12:48:56.011305",
+    "vertex_count": 7,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-02T12:48:56.011305",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-02T12:48:56.011305",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-02T12:48:56.011305",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-02T12:48:56.011305",
+        "action": "add_edge",
+        "from": 1,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-02T12:48:56.011305",
+        "action": "add_edge",
+        "from": 2,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-02T12:48:56.011305",
+        "action": "add_edge",
+        "from": 2,
+        "to": 6
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-02T12:48:58.529148",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 2,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-02T12:48:58.529148",
+        "action": "add_edge",
+        "from": 3,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T00:16:12.364274",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T00:16:12.364274",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03T00:16:12.364274",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T00:16:20.732395",
+    "vertex_count": 6,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T00:16:20.732395",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03T00:16:20.732395",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T00:16:20.732395",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-03T00:16:20.732395",
+        "action": "add_edge",
+        "from": 3,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-03T00:16:20.732395",
+        "action": "add_edge",
+        "from": 4,
+        "to": 5
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T01:23:31.340322",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03T01:23:31.340322",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T01:24:09.811310",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:24:31.275991",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:24:54.636347",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T01:24:54.636347",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T01:24:54.636347",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-03T01:24:54.636347",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T01:25:21.831015",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:25:42.919767",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:39:17.413241",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:44:30.632440",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:45:02.471934",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:47:16.426700",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:48:25.217262",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T01:50:01.833540",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T02:13:44.270895",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T02:24:13.590136",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T02:24:41.815593",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T02:26:31.700603",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:06:44.486455",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:08:33.654257",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:09:33.515657",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:10:16.382662",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:16:03.620078",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:17:07.135826",
+    "vertex_count": 3,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T09:17:07.135826",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T09:17:07.135826",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-03T09:17:07.135826",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T09:17:46.869354",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:20:18.041053",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:24:03.606862",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:25:28.345780",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:29:10.361827",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:32:39.396106",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:34:47.057894",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:35:33.919128",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T09:35:33.919128",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-03T09:35:33.919128",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T09:35:33.919128",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T09:37:15.076563",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:38:27.597358",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:41:52.780094",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T09:57:05.027805",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:00:06.477725",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:04:50.197212",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:21:38.501529",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:22:21.019918",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:26:41.359979",
+    "vertex_count": 3,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T10:26:41.359979",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03T10:26:41.359979",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T10:26:41.359979",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T10:26:51.058459",
+    "vertex_count": 3,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T10:26:51.058459",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03T10:26:51.058459",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T10:26:51.058459",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T10:27:20.272313",
+    "vertex_count": 3,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T10:27:20.273320",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-03T10:27:20.273320",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-03T10:27:20.273320",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T10:29:46.837021",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:37:41.992245",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:40:33.310123",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:42:55.069219",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T10:43:06.591321",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03T10:43:06.591321",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-03T10:43:06.591321",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-03T10:43:06.591321",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03T10:49:06.488839",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T12:15:59.839871",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T12:16:47.724455",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T12:21:01.712292",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03T12:23:37.162781",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 12:28:48",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 12:35:15",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 12:35:36",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03 12:35:36",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03 12:35:36",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-03 12:35:36",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-03 12:35:36",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03 12:36:45",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-03 12:36:45",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-03 12:36:45",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-03 13:11:36",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 13:17:37",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 13:19:37",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 19:05:35",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 19:10:07",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 19:12:20",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 19:14:07",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:08:19",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:11:55",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:14:28",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:21:49",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:25:07",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:28:27",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:30:01",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:32:39",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:34:15",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:35:18",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:41:11",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:42:24",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:50:52",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:51:46",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:54:17",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:54:33",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 20:56:27",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-03 21:08:14",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 00:10:50",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 00:21:59",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 00:29:25",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 00:33:39",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 00:38:13",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 00:47:48",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 00:58:37",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:04:06",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:04:43",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:05:35",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:07:37",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:09:04",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:12:03",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:25:21",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:28:58",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:31:31",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:34:50",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:39:28",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:50:39",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 01:56:38",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 02:01:59",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 02:06:07",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 02:10:01",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 02:10:20",
+    "vertex_count": 6,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 02:10:20",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 02:10:20",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 02:10:20",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 02:10:20",
+        "action": "add_edge",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 02:10:20",
+        "action": "add_edge",
+        "from": 0,
+        "to": 5
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 02:13:43",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 02:13:43",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 02:13:43",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 02:15:53",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 02:25:42",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 02:28:30",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 09:35:42",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 09:47:14",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 09:53:44",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 10:29:35",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 10:32:32",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:32:32",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 10:32:32",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:32:32",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 10:32:41",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:32:41",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:32:41",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:32:41",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 10:39:50",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:39:50",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:39:50",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 10:39:50",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 10:41:20",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:41:20",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:41:20",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:41:20",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 10:45:33",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:45:33",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 10:45:33",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:45:33",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 10:46:49",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:46:49",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:46:49",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 10:46:49",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:46:49",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:46:49",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 10:47:31",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:47:31",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:47:31",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 10:48:21",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:48:21",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:48:21",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:48:21",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 10:48:34",
+    "vertex_count": 15,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 0,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 0,
+        "to": 8
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 0,
+        "to": 14
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 1,
+        "to": 13
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 1,
+        "to": 14
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 2,
+        "to": 7
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 2,
+        "to": 10
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 2,
+        "to": 12
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 2,
+        "to": 13
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 3,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 3,
+        "to": 11
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 3,
+        "to": 12
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 5,
+        "to": 12
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 5,
+        "to": 13
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 6,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 6,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 6,
+        "to": 8
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 6,
+        "to": 9
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 6,
+        "to": 11
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 6,
+        "to": 13
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 6,
+        "to": 14
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 7,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 7,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 7,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 7,
+        "to": 6
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 7,
+        "to": 8
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 7,
+        "to": 9
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 7,
+        "to": 11
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 8,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 8,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 8,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 8,
+        "to": 14
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 9,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 9,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 9,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 9,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 9,
+        "to": 8
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 9,
+        "to": 11
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 9,
+        "to": 14
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 10,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 10,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 10,
+        "to": 6
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 10,
+        "to": 7
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 10,
+        "to": 9
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 10,
+        "to": 13
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 11,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 11,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 11,
+        "to": 12
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 11,
+        "to": 14
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 12,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 12,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 12,
+        "to": 6
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 12,
+        "to": 8
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 12,
+        "to": 9
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 12,
+        "to": 10
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 12,
+        "to": 13
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 13,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 13,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 13,
+        "to": 7
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 13,
+        "to": 8
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 13,
+        "to": 9
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 13,
+        "to": 11
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 13,
+        "to": 14
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 14,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 14,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 10:48:34",
+        "action": "add_edge",
+        "from": 14,
+        "to": 10
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:01:04",
+    "vertex_count": 3,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:01:04",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:01:04",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:01:30",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:01:30",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:01:30",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 11:01:30",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 11:01:30",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:01:46",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:01:46",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 11:01:46",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 11:01:46",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:01:46",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:03:39",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:03:39",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:03:39",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:03:39",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:03:39",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 11:03:39",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:06:30",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:06:30",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:06:30",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:06:30",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 11:06:30",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:06:30",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:09:58",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:09:58",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:09:58",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:09:58",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 11:09:58",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:11:32",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:11:32",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 11:11:32",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 11:11:32",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:11:32",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:11:32",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:12:23",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:12:23",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:12:23",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:12:23",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:12:23",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:13:32",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:13:32",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:13:32",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:13:55",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:13:55",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 11:13:55",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:13:55",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 11:14:11",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 11:14:11",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 11:14:11",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 11:14:11",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 13:28:52",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 13:28:52",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 13:28:52",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 13:28:52",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 13:28:52",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 13:28:52",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 13:29:48",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 13:29:48",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 13:29:48",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 13:29:48",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 13:29:48",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 13:40:38",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 13:40:38",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 13:40:38",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 13:41:36",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 13:41:40",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 13:41:40",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 13:41:40",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 13:41:40",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 13:57:13",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 13:57:13",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 13:57:13",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 13:57:13",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 13:57:13",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 13:57:27",
+    "vertex_count": 7,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 2,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 4,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 4,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 5,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 5,
+        "to": 6
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 6,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 13:57:27",
+        "action": "add_edge",
+        "from": 6,
+        "to": 4
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 13:57:46",
+    "vertex_count": 7,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 1,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 1,
+        "to": 6
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 2,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 3,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 3,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 3,
+        "to": 6
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 4,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 4,
+        "to": 5
+      },
+      {
+        "timestamp": "2025-06-04 13:57:46",
+        "action": "add_edge",
+        "from": 6,
+        "to": 4
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 14:17:21",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 14:17:26",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 14:17:26",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 14:17:26",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 14:17:26",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 14:19:31",
+    "vertex_count": 5,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 14:19:35",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 14:19:35",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 14:19:35",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 14:19:35",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 14:19:35",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 14:19:35",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 14:19:51",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 14:19:51",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 14:19:51",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 14:19:51",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 14:19:51",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 14:19:51",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 14:34:15",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-04 14:40:32",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 14:40:32",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 14:40:32",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 14:40:32",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 14:40:36",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 14:40:36",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 14:40:36",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 14:40:36",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 14:40:36",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 14:40:36",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 14:43:00",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 14:43:00",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 14:43:00",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 14:43:00",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 14:43:03",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 14:43:03",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 14:43:03",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 14:43:03",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 14:43:03",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 14:43:03",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 14:43:03",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 17:57:40",
+    "vertex_count": 3,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 17:57:40",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 17:57:40",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 17:57:46",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 17:57:46",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 17:57:46",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 17:57:46",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 17:57:46",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 17:58:39",
+    "vertex_count": 5,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 17:58:39",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 17:58:39",
+        "action": "add_edge",
+        "from": 1,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 17:58:39",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 17:58:39",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 17:58:39",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 17:58:39",
+        "action": "add_edge",
+        "from": 3,
+        "to": 4
+      },
+      {
+        "timestamp": "2025-06-04 17:58:39",
+        "action": "add_edge",
+        "from": 4,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 17:58:39",
+        "action": "add_edge",
+        "from": 4,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:23:53",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:23:53",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:23:53",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 19:23:53",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:23:53",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:25:25",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:25:25",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 19:25:25",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:25:29",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:25:29",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 19:25:29",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:25:29",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 19:25:29",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 19:25:29",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:25:29",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:29:57",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:29:57",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 19:29:57",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:30:00",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:30:00",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 19:30:00",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:30:00",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 19:30:00",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:30:00",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:30:30",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:30:30",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 19:30:30",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:34:35",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:34:35",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 19:34:35",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:42:40",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:42:40",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 19:42:40",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:42:40",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 19:42:40",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:42:40",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:48:07",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:48:07",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-04 19:48:07",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 19:48:07",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-04 19:54:51",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-04 19:54:51",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-04 19:54:51",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-04 19:54:51",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-04 19:54:51",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:14:02",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:14:02",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:14:02",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:14:02",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:14:02",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:14:02",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:14:02",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:14:59",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:14:59",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:14:59",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:14:59",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:14:59",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:14:59",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:15:32",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:15:32",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:15:32",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:15:32",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:15:32",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:36:16",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:36:16",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 10:36:16",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:36:16",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:36:16",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:36:16",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:38:55",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:38:55",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:38:55",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:38:55",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:38:55",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:38:55",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:47:19",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:47:19",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:47:19",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:47:22",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:47:22",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:47:22",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 10:47:22",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:47:22",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:47:22",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:48:21",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:48:21",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:48:21",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 10:48:21",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:48:21",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:48:21",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:49:51",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:49:51",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:49:51",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 10:49:51",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:49:51",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 10:49:51",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:49:51",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 10:54:32",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 10:54:32",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 10:54:32",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:54:32",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 10:54:32",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 10:54:32",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 11:09:27",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 11:09:27",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 11:09:27",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 11:09:27",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 11:09:27",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 11:09:27",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 11:13:05",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 11:13:05",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 11:13:08",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 1,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 1,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 11:13:08",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 11:14:17",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 11:14:17",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 11:14:20",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 11:14:20",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 11:14:20",
+        "action": "add_edge",
+        "from": 0,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 11:14:20",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 11:14:20",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 11:14:20",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 11:14:20",
+        "action": "add_edge",
+        "from": 2,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 11:14:20",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      }
+    ]
+  },
+  {
+    "run_timestamp": "2025-06-05 11:29:56",
+    "vertex_count": 4,
+    "edges_added": []
+  },
+  {
+    "run_timestamp": "2025-06-05 11:30:01",
+    "vertex_count": 4,
+    "edges_added": [
+      {
+        "timestamp": "2025-06-05 11:30:01",
+        "action": "add_edge",
+        "from": 0,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 11:30:01",
+        "action": "add_edge",
+        "from": 0,
+        "to": 2
+      },
+      {
+        "timestamp": "2025-06-05 11:30:01",
+        "action": "add_edge",
+        "from": 1,
+        "to": 3
+      },
+      {
+        "timestamp": "2025-06-05 11:30:01",
+        "action": "add_edge",
+        "from": 2,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 11:30:01",
+        "action": "add_edge",
+        "from": 2,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 11:30:01",
+        "action": "add_edge",
+        "from": 3,
+        "to": 0
+      },
+      {
+        "timestamp": "2025-06-05 11:30:01",
+        "action": "add_edge",
+        "from": 3,
+        "to": 1
+      },
+      {
+        "timestamp": "2025-06-05 11:30:01",
+        "action": "add_edge",
+        "from": 3,
+        "to": 2
+      }
+    ]
+  }
+]
