@@ -1,6 +1,11 @@
+<!DOCTYPE html>
+
 % rebase('layout.tpl', title=title, year=year, adjacency_matrix=adjacency_matrix, graph_json=graph_json, cycles=cycles)
 
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
     <link rel="stylesheet" href="/static/content/pages/cycle_detection.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -26,7 +31,7 @@
                                 <p class="matrix-label">Матрица смежности:</p>
                                 <pre>0 1 0
 0 0 1
-1 0 0</pre>
+1 1 0</pre>
                             </div>
                             <img src="/static/images/cyclic_graph.png" alt="Пример графа с циклом" class="example-image">
                         </div>
@@ -62,6 +67,7 @@
                             <p><strong>Матрица смежности:</strong></p>
 
                             <table class="matrix-table static-matrix">
+                                <tbody>
                                 % for row in adjacency_matrix:
                                     <tr>
                                         % for val in row:
@@ -69,6 +75,7 @@
                                         % end
                                     </tr>
                                 % end
+                                </tbody>
                             </table>
                         </div>
                     % else:
@@ -145,3 +152,4 @@
         <script src="/static/scripts/graph.js"></script>
     % end
 </body>
+</html>

@@ -13,7 +13,7 @@
     <WorkingDirectory>.</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
     <OutputPath>.</OutputPath>
-    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <WebBrowserUrl>http://localhost:8080</WebBrowserUrl>
     <PythonDebugWebServerCommandArguments>--debug $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject_C222_3_GBG</Name>
@@ -67,16 +67,22 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
-    <Compile Include="tests\test_equivalence_analyzer.py">
+    <Compile Include="tests\ui_tests\test_ui_cycle_detection.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="tests\test_max_flow.py">
+    <Compile Include="tests\ui_tests\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="tests\test_cycle_detection.py">
+    <Compile Include="tests\unit_tests\test_equivalence_analyzer.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="tests\test_index.py">
+    <Compile Include="tests\unit_tests\test_max_flow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\unit_tests\test_cycle_detection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\unit_tests\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tests\__init__.py">
@@ -95,6 +101,8 @@
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\scripts\" />
+    <Folder Include="tests\ui_tests\" />
+    <Folder Include="tests\unit_tests\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
