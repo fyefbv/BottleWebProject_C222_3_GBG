@@ -139,71 +139,75 @@ class UITestEquivalenceAnalysis:
             self.logger.error(f"Ошибка проверки результатов: {str(e)}")
             return False
 
-    def test_full_equivalence_analysis_flow(self):
-        try:
-            self.logger.info("Запуск тестирования анализа эквивалентности")
+def test_full_equivalence_analysis_flow(self):
+    try:
+        self.logger.info("Запуск тестирования анализа эквивалентности")
+        self.wait_for_server(timeout=30)
 
-            self.wait_for_server(timeout=30)
+        # Первый тест — эквивалентное отношение
+        self.driver.get(self.BASE_URL)
+        matrix = self.load_template("Эквивалентное отношение (4 вершины)")
+        self.enter_matrix_data(matrix)
+        time.sleep(2)
+        build_btn = self.driver.find_element(By.ID, "build-graph")
+        self.scroll_to_element(build_btn)
+        build_btn.click()
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#graph-area svg"))
+        )
+        time.sleep(2)
+        methods_section = self.driver.find_element(By.ID, "methods")
+        self.scroll_to_element(methods_section)
+        time.sleep(1)
+        equivalence_btn = self.driver.find_element(
+            By.XPATH, "//a[.//span[contains(text(), 'Анализ отношений эквивалентности')]]")
+        equivalence_btn.click()
+        
+        # Ожидание и прокрутка к результатам
+        result_section = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ".result-section"))
+        )
+        self.scroll_to_element(result_section)  # Добавленный скролл
+        self.check_equivalence_results()
+        time.sleep(3)
 
-            # Первый тест — эквивалентное отношение
-            self.driver.get(self.BASE_URL)
-            matrix = self.load_template("Эквивалентное отношение (4 вершины)")
-            self.enter_matrix_data(matrix)
-            time.sleep(2)
-            build_btn = self.driver.find_element(By.ID, "build-graph")
-            self.scroll_to_element(build_btn)
-            build_btn.click()
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "#graph-area svg"))
-            )
-            time.sleep(2)
-            methods_section = self.driver.find_element(By.ID, "methods")
-            self.scroll_to_element(methods_section)
-            time.sleep(1)
-            equivalence_btn = self.driver.find_element(
-                By.XPATH, "//a[.//span[contains(text(), 'Анализ отношений эквивалентности')]]")
-            equivalence_btn.click()
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, ".result-section"))
-            )
-            self.check_equivalence_results()
-            time.sleep(3)
+        # Второй тест — неэквивалентное отношение
+        self.driver.get(self.BASE_URL)
+        matrix = self.load_template("Неэквивалентное отношение (4 вершины)")
+        self.enter_matrix_data(matrix)
+        time.sleep(2)
+        build_btn = self.driver.find_element(By.ID, "build-graph")
+        self.scroll_to_element(build_btn)
+        build_btn.click()
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "#graph-area svg"))
+        )
+        time.sleep(2)
+        methods_section = self.driver.find_element(By.ID, "methods")
+        self.scroll_to_element(methods_section)
+        time.sleep(1)
+        equivalence_btn = self.driver.find_element(
+            By.XPATH, "//a[.//span[contains(text(), 'Анализ отношений эквивалентности')]]")
+        equivalence_btn.click()
+        
+        # Ожидание и прокрутка к результатам
+        result_section = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ".result-section"))
+        )
+        self.scroll_to_element(result_section)  # Добавленный скролл
+        self.check_equivalence_results()
+        time.sleep(3)
 
-            # Второй тест — неэквивалентное отношение
-            self.driver.get(self.BASE_URL)
-            matrix = self.load_template("Неэквивалентное отношение (4 вершины)")
-            self.enter_matrix_data(matrix)
-            time.sleep(2)
-            build_btn = self.driver.find_element(By.ID, "build-graph")
-            self.scroll_to_element(build_btn)
-            build_btn.click()
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "#graph-area svg"))
-            )
-            time.sleep(2)
-            methods_section = self.driver.find_element(By.ID, "methods")
-            self.scroll_to_element(methods_section)
-            time.sleep(1)
-            equivalence_btn = self.driver.find_element(
-                By.XPATH, "//a[.//span[contains(text(), 'Анализ отношений эквивалентности')]]")
-            equivalence_btn.click()
-            WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, ".result-section"))
-            )
-            self.check_equivalence_results()
-            time.sleep(3)
+        return True
 
-            return True
+    except Exception as e:
+        self.logger.error(f"Ошибка: {str(e)}", exc_info=True)
+        return False
 
-        except Exception as e:
-            self.logger.error(f"Ошибка: {str(e)}", exc_info=True)
-            return False
-
-        finally:
-            self.driver.quit()
-            self.logger.info("Браузер закрыт")
-            self.stop_server()
-
+    finally:
+        self.driver.quit()
+        self.logger.info("Браузер закрыт")
+        self.stop_server()
 def setup_logger():
     logger = logging.getLogger("UITestLogger")
     logger.setLevel(logging.INFO)
