@@ -24,9 +24,9 @@ if __name__ == '__main__':
     STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static').replace('\\', '/')
     HOST = os.environ.get('SERVER_HOST', 'localhost')
     try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        PORT = int(os.environ.get('SERVER_PORT', '8080'))
     except ValueError:
-        PORT = 5555
+        PORT = 8080
 
     @bottle.route('/static/<filepath:path>')
     def server_static(filepath):
@@ -34,6 +34,12 @@ if __name__ == '__main__':
         When running under a production server such as IIS or Apache,
         the server should be configured to serve the static files."""
         return bottle.static_file(filepath, root=STATIC_ROOT)
+    
+    bottle.TEMPLATE_PATH.insert(0, os.path.join(PROJECT_ROOT, 'views'))
 
     # Starts a local test server.
     bottle.run(server='wsgiref', host=HOST, port=PORT)
+
+
+
+
