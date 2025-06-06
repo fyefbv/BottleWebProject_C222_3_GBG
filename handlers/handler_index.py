@@ -60,7 +60,7 @@ def index_handler():
         ]
     })
     save_json_list(ALGORITHM_LOGS, log_entries)
-
+    print(graph_json)
     # Отдаём шаблон с graph_json
     return template('index',
                     title='Главная страница',

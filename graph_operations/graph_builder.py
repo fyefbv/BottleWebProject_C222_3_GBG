@@ -9,14 +9,33 @@ class GraphBuilder:
         self.G = nx.DiGraph()
         self.G.add_nodes_from(range(self.vertex_count))
 
+        #Какой граф отрисовываем?
+        self.flag = False
+        for i in range(self.vertex_count):
+           if self.flag == True:
+               break
+           for j in range(self.vertex_count):
+               if self.adj_matrix[i][j] > 1:
+                   self.flag = True
+                   break
+
     # Строит граф на основе матрицы смежности (возвращает экземпляр nx.DiGraph с добавленными рёбрами)
     def build_graph(self):
         self.G.remove_edges_from(list(self.G.edges()))
-        for i in range(self.vertex_count):
-            for j in range(self.vertex_count):
-                if self.adj_matrix[i][j] == 1:
-                    self.G.add_edge(i, j)
-        return self.G
+        if self.flag == False:
+            for i in range(self.vertex_count):
+                for j in range(self.vertex_count):
+                    if self.adj_matrix[i][j] == 1:
+                        self.G.add_edge(i, j)
+            return self.G
+        if self.flag == True:
+            for i in range(self.vertex_count):
+                for j in range(self.vertex_count):
+                    weight = self.adj_matrix[i][j]
+                    if weight >= 1:
+                        self.G.add_edge(i, j, weight=weight)  # сохраняем вес
+            return self.G
+
 
     # Возвращает список смежности графа в виде словаря {вершина: [список соседей]}
     def get_adjacency_list(self):
@@ -30,8 +49,18 @@ class GraphBuilder:
             self.build_graph()
 
         nodes = [{"id": i} for i in range(self.vertex_count)]
-        links = [
-            {"source": u, "target": v}
+        if self.flag == False:
+            links = [
+                {"source": u, "target": v}
+                for u, v in self.G.edges()
+            ]
+        if self.flag == True:
+            links = [
+            {
+                "source": u,
+                "target": v,
+                "weight": self.G[u][v]["weight"]  # передаём вес
+            }
             for u, v in self.G.edges()
         ]
         return {"nodes": nodes, "links": links}

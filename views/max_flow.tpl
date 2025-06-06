@@ -1,10 +1,15 @@
-% rebase('layout.tpl', title='Максимальный поток', year=year)
+% rebase('layout.tpl', title='Максимальный поток', year=year, graph_json=graph_json, adjacency_matrix=adjacency_matrix)
 
 <head>
     <link rel="stylesheet" href="/static/content/pages/max_flow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/static/content/pages/site.css">
+   <!-- <link rel="stylesheet" href="/static/content/site.css"> -->
 </head>
+
+
+
+
+
 
 <body>
     <div class="container">
@@ -61,48 +66,42 @@
     </div>
 </section>
 
-            <!-- Горизонтальные блоки: входные данные и граф -->
+            <!-- Горизонтальные блоки: входные данные и граф method="POST" action="/build_graph_max_flow"-->
             <div class="data-graph-container">
                 <!-- Блок с входными данными -->
                 <section class="card input-data">
                     <h2>Входные данные</h2>
-
-
-                    <div class="form-group">
-                        <label for="vertex-count">Количество вершин:</label>
-                        <input type="number" id="vertex-count" min="1" max="15" value="4">
-                    </div>
-
-                    <form method="post" action="/max_flow">
-                        <div class="main-matrix-container">
-                            <table class="matrix-table">
-                                <tr>
-                                    <th></th>
-                                    % for j in range(1, 9):
-                                        <th>{{ j }}</th>
-                                    % end
-                                </tr>
-                                % for i in range(8):
-                                    <tr>
-                                        <th>{{ i + 1 }}</th>
-                                        % for j in range(8):
-                                            <td>
-                                                <input type="number" name="cell_{{i}}_{{j}}" min="0" value="0" class="matrix-input">
-                                            </td>
-                                        % end
-                                    </tr>
-                                % end
-                            </table>
+                    <form id="build-graph-form" method="POST" action="/build_graph_max_flow" >
+                         <div class="form-group">
+                            <label for="vertex-count">Количество вершин:</label>
+                            <input type="number" id="vertex-count" name="vertex-count" min="1" max="15" value="${adjacency_matrix and initialVertexCount or '4'}">
                         </div>
 
-                        <div class="button-row">
-                            <button class="btn disabled" type="button" title="Функция не реализована">
-                                <i class="fas fa-random"></i> Сгенерировать случайно
-                            </button>
-                            <button class="btn disabled" type="button" title="Функция не реализована">
+                        <div style="margin-bottom: 20px; class="button-row">
+                            <button  class="btn primary" type="submit" title="Функция не реализована">
                                 <i class="fas fa-eye"></i> Отобразить граф
                             </button>
                         </div>
+
+
+                        <div class="form-group">
+                            <label>Матрица пропускных способностей:</label>
+                        <div id="matrix-container" class="main-matrix-container"></div>
+
+
+                    </div>
+                    </form>
+
+
+
+                    <form method="POST" action="/generate_graph" id="generate-graph-form">
+                        <div class="button-row">
+                            <button id="generate-matrix" class="btn primary" type="submit" title="Сгенерировать случайную матрицу">
+                                <i class="fas fa-random"></i> Сгенерировать случайно
+                            </button>
+                        </div>
+                    </form>
+             
                     </form>
                 </section>
 
@@ -116,6 +115,7 @@
                         </div>
                     </div>
                 </section>
+
             </div>
 
             <!-- Результат поиска максимального потока -->
@@ -124,17 +124,73 @@
                 <div class="properties-grid">
                     <div class="property-card">
                         <h3>Максимальный поток</h3>
+
                         <div class="property-result" id="max-flow-value">
-                            –
+                            % if max_flow_value is not None:
+                                {{max_flow_value}} (из {{flow['source']}} в {{flow['sink']}})
+                            % else:
+                                –
+                            % end
                         </div>
+
                         <div class="property-description">
                             Величина максимального потока от истока к стоку
                         </div>
                     </div>
                 </div>
             </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </main>
     </div>
 
+
+   <!-- <script src="/static/scripts/matrix.js"></script> -->
     <script src="/static/scripts/collapse-block.js"></script>
+
+
+
+
+   % if adjacency_matrix:
+   <script>
+       const initialMatrix = {{!adjacency_matrix}};
+       const initialVertexCount = initialMatrix.length;
+   </script>
+   % end
+   <script src="/static/scripts/matrix_max_flow.js"></script>
+
+
+   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!--  <script src="/static/scripts/templates.js"></script> -->
+
+
+  % if graph_json:
+      <script>
+          var graphData = {{!graph_json}};
+          console.log('graph dla otobrazheniya1:', graphData);
+      </script>
+      <script src="/static/scripts/graph.js"></script>
+  % end
+
+
 </body>
