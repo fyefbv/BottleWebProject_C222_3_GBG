@@ -7,6 +7,7 @@ from datetime import datetime
 from graph_operations.graph_loader import get_adjacency_matrix, get_graph_json
 from handlers.handler_index import index_handler
 from handlers.handler_cycle_detection import cycle_detection_handler
+from handlers.handler_equivalence import equivalence_handler
 
 from handlers.handler_max_flow import generate_graph
 from handlers.handler_max_flow import build_graph_handler    
@@ -34,14 +35,10 @@ def about():
         year=datetime.now().year
     )
 
+
 @route('/equivalence')
-@view('equivalence')
 def equivalence():
-    """Отображает страницу определения свойств графа"""
-    return dict(
-        title='Определение свойств графа',
-        year=datetime.now().year
-    )
+    return equivalence_handler()
 
 @get('/cycle_detection')
 @view('cycle_detection')

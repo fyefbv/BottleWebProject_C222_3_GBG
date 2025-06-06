@@ -8,10 +8,10 @@ import os
 import threading
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
 
 class UITestEquivalenceAnalysis:
     BASE_URL = "http://localhost:8080"
@@ -25,7 +25,7 @@ class UITestEquivalenceAnalysis:
         self.start_server()
 
         # Настройка Chrome WebDriver
-        self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        self.driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
         self.driver.implicitly_wait(20)
 
     def start_server(self):

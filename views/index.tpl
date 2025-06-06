@@ -60,7 +60,7 @@
                         <ul class="method-list">
                             <li>
                                 <form method="POST" action="/cycle_detection">
-                                    <button type="submit" class="btn method-btn">
+                                    <button type="submit" class="btn method-btn" id="cycle-detection-btn">
                                         <span class="method-icon">↻</span>
                                         <span class="method-text">Поиск циклов в графе</span>
                                     </button>
